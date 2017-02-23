@@ -6,31 +6,31 @@ function mobileMenu (data){
         $('.menu').append(`
                 <div class='beers'>
                     <div class='beer-name'>
-                    ${Beer.item}
+                    ${beer.item}
                     </div>
                     <div class='beer-price'>
-                    ${Beer.price}
+                    ${beer.price}
                     </div>
                     <div class='beer-style'>
-                    ${Beer.style}
+                    ${beer.style}
                     </div>
                     <div class='beer-abv'>
-                    ${Beer.abv}
+                    ${beer.abv}
                     </div>
                     <div class='beer-desc'>
-                    ${Beer.description}
+                    ${beer.description}
                     </div>
                     <div class='beer-allergies'>
-                    ${Beer.allergies}
+                    ${beer.allergies}
                     </div>
                     <div class='beer-fav'>
-                    ${Beer.favorite}
+                    ${beer.favorite}
                     </div>
                     <div class='beer-bottle'>
-                    ${Beer.bottle}
+                    ${beer.bottle}
                     </div>
                     <div class='beer-draught'>
-                    ${Beer.draught}
+                    ${beer.draught}
                     </div>
                 </div>
         `);
