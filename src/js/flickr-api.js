@@ -1,5 +1,5 @@
 import $ from 'jquery';
-import {FL_KEY} from './flickr-token';
+import {FL_KEY} from './tokens';
 
 
 // this search flickr to grab picture ids that have a tag we specify, (right now 'german beer'

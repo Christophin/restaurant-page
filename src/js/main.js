@@ -2,9 +2,11 @@ import $ from 'jquery';
 import {searchFlickr} from './flickr-api';
 import { grabMenu, grabSpecial, grabNews } from './tiy-api';
 import {mobileAnchors, desktopAnchors} from './anchors.js';
+import { mobileMenu } from "./templates";
+
 // api requests
 searchFlickr();
-grabMenu();
+grabMenu().then(mobileMenu);
 grabSpecial();
 grabNews();
 
