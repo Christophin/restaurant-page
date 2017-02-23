@@ -1,7 +1,7 @@
 import $ from 'jquery';
 import {searchFlickr} from './flickr-api';
 import { grabMenu, grabSpecial, grabNews } from './tiy-api';
-
+import {mobileAnchors, desktopAnchors} from './anchors.js';
 // api requests
 searchFlickr();
 grabMenu();
