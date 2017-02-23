@@ -49,6 +49,15 @@ function desktopAnchors()   {
             </div>
             <div class="columns content2">
                 <div class="column tabs is-two-thirds"></div>
+                <div class="column tabsBox is-two-thirds">
+                    <div class="tabs">
+                        <ul>
+                        <li class="is-active"><a>Our Story</a></li>
+                        <li><a>Menu</a></li>
+                        <li><a>reservations</a></li>
+                        </ul>
+                        </div>
+                    </div>
                 <div class="column photos"></div>
             </div>
         </div>
