@@ -3,6 +3,8 @@ import {searchFlickr} from './flickr-api';
 import { grabMenu, grabSpecial, grabNews } from './tiy-api';
 import {mobileAnchors, desktopAnchors} from './anchors.js';
 import {buildMap} from './googleMaps.js';
+import { mobileMenu } from './templates';
+
 
 // creates our js mobile breakpoint
 function breakPoint ()  {
@@ -17,7 +19,7 @@ breakPoint();
 
 // api requests
 searchFlickr();
-grabMenu();
+grabMenu().then(mobileMenu);
 grabSpecial();
 grabNews();
 buildMap();
