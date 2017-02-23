@@ -1,6 +1,8 @@
 import $ from 'jquery';
 import {FL_KEY} from './flickr-token';
 
+
+// this search flickr to grab picture ids that have a tag we specify, (right now 'german beer'
 function searchFlickr ()  {
     return $.ajax({
         url: 'https://api.flickr.com/services/rest/',
@@ -14,14 +16,17 @@ function searchFlickr ()  {
     });
 }
 
+// this will store the ids we get back from search flickr
 var imgIds = [];
 
+// takes the data we get back from searchFlickr and stores the picture ids in imgIds
 function processFlickr(data)    {
     data.photos.photo.forEach(function(image) {
         imgIds.push(image.id);
     });
 }
 
+// indexes through our image ids and requests urls for each image. this will need a .promiseAll
 imgIds.forEach(function(image)  {
     return $.ajax({
         url: 'http://api.flickr.com/services/rest/',
