@@ -2,17 +2,11 @@ import $ from 'jquery';
 import {searchFlickr} from './flickr-api';
 import { grabMenu, grabSpecial, grabNews } from './tiy-api';
 import {mobileAnchors, desktopAnchors} from './anchors.js';
-import { mobileMenu, mobileNews, mobileSpecial } from "./templates";
+import { mobileMenu, mobileNews, mobileSpecial } from './templates';
 import {buildMap} from './googleMaps.js';
-import { mobileMenu } from './templates';
 
 // api requests
 searchFlickr();
-
-=======
-
->>>>>>> 7a178dc3f993e658477c82840b807e6127b89986
-
 
 // creates our js mobile breakpoint
 function breakPoint ()  {
