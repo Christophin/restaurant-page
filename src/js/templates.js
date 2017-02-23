@@ -64,37 +64,32 @@ function mobileMenu (data){
 
 //pulls NEWS information from NEWS api
 function mobileNews (data) {
-    data.forEach(function(news){
-        $('.news').append(`
-            <div class='news'>
-                <div class='title'>
-                ${news.title}
-                </div>
-                <div class='date-published'>
-                ${news.date}
-                </div>
-                <div class='post'>
-                ${news.post}
-                </div>
+    $('.news').append(`
+        <div class='news'>
+            <div class='title'>
+                ${data.title}
             </div>
-            `)
-        }
-    )
+            <div class='date-published'>
+                ${data.date_published}
+            </div>
+            <div class='post'>
+                ${data.post}
+            </div>
+        </div>
+    `);
 }
+
 
 //pulls SPECIAL information from SPECIAL api
 function mobileSpecial (data) {
-    data.forEach(function(special){
-        $('.specials').append(`
-            <div class='special-id'>
-            ${special.id}
-            </div>
-            <div class='menu-item'>
-            ${special.menu_item_id}
-            </div>
-            `)
-        }
-    )
+    $('.specials').append(`
+        <div class='special-id'>
+        ${data.id}
+        </div>
+        <div class='menu-item'>
+        ${data.menu_item_id}
+        </div>
+        `);
 }
 
 
