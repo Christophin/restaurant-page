@@ -11,6 +11,12 @@ function mobileMenu (data){
                     <div class='beer-price'>
                     ${Beer.price}
                     </div>
+                    <div class='beer-style'>
+                    ${Beer.style}
+                    </div>
+                    <div class='beer-abv'>
+                    ${Beer.abv}
+                    </div>
                     <div class='beer-desc'>
                     ${Beer.description}
                     </div>
@@ -19,12 +25,6 @@ function mobileMenu (data){
                     </div>
                     <div class='beer-fav'>
                     ${Beer.favorite}
-                    </div>
-                    <div class='beer-style'>
-                    ${Beer.style}
-                    </div>
-                    <div class='beer-abv'>
-                    ${Beer.abv}
                     </div>
                     <div class='beer-bottle'>
                     ${Beer.bottle}
