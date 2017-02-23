@@ -12,7 +12,11 @@ function mobileAnchors() {
         <div class="accordion">
             <div class="news"></div>
             <div class="specials"></div>
-            <div class="location"></div>
+            <div class="location">
+                <div class='mapBox'>
+                    <div id="map"></div>
+                </div>
+            </div>
             <div class="story"></div>
             <div class="menu"></div>
             <div class="reservations"></div>
@@ -37,7 +41,11 @@ function desktopAnchors()   {
             <div class="columns content1">
                 <div class="news column is-one-third"></div>
                 <div class="specials column"></div>
-                <div class="location column"></div>
+                <div class="location column">
+                    <div class='mapBox'>
+                        <div id="map"></div>
+                    </div>
+                </div>
             </div>
             <div class="columns content2">
                 <div class="column tabs is-two-thirds"></div>
