@@ -27,7 +27,7 @@ function mobileMenu (data){
                     ${entrees.vegan}
                     </div>
                 </div>
-        `)
+        `);
     });
     //pulls GAMES information from MENU api
     data.games.forEach(function(games){
@@ -58,9 +58,9 @@ function mobileMenu (data){
                     ${games.platform}
                     </div>
                 </div>
-        `)
+        `);
     });
-};
+}
 
 //pulls NEWS information from NEWS api
 function mobileNews (data) {
