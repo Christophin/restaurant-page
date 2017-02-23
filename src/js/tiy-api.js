@@ -25,4 +25,17 @@ function grabNews () {
     });
 }
 
-export  { grabMenu, grabSpecial, grabNews };
+//uses the specials api menu id to grab the correct menu item.
+//TODO ----THIS IS NOT WORKING YET----- TODO
+
+function specialGeneration (menuId) {
+    grabMenu().then.forEach(function(menus) {
+        menus.filter(function(item)   {
+            if (item.id === menuId) {
+                return item;
+            }
+        });
+    });
+}
+
+export  { grabMenu, grabSpecial, grabNews, specialGeneration };

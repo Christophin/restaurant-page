@@ -1,6 +1,6 @@
 import $ from 'jquery';
 import {searchFlickr} from './flickr-api';
-import { grabMenu, grabSpecial, grabNews } from './tiy-api';
+import { grabMenu, grabSpecial, grabNews, specialGeneration } from './tiy-api';
 import {mobileAnchors, desktopAnchors} from './anchors.js';
 import { mobileMenu, mobileNews, mobileSpecial } from './templates';
 import {buildMap} from './googleMaps.js';
@@ -22,7 +22,7 @@ breakPoint();
 // api requests
 searchFlickr();
 grabMenu().then(mobileMenu);
-grabSpecial().then(mobileSpecial);
+grabSpecial().then(mobileSpecial).then(specialGeneration);
 grabNews().then(mobileNews);
 buildMap();
 
