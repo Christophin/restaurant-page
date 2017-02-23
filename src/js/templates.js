@@ -82,14 +82,7 @@ function mobileNews (data) {
 
 //pulls SPECIAL information from SPECIAL api
 function mobileSpecial (data) {
-    $('.specials').append(`
-        <div class='special-id'>
-        ${data.id}
-        </div>
-        <div class='menu-item'>
-        ${data.menu_item_id}
-        </div>
-        `);
+    return data.menu_item_id;
 }
 
 
