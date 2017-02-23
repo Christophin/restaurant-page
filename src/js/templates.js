@@ -3,7 +3,7 @@ import $ from 'jquery';
 function mobileMenu (data){
     //pulls entree information from Menu api
     data.entrees.forEach(function(entrees){
-        $('.container').append(`
+        $('.menu').append(`
                 <div class="food">
                     <div class="entree-name">
                     ${entrees.item}
@@ -27,11 +27,11 @@ function mobileMenu (data){
                     ${entrees.vegan}
                     </div>
                 </div>
-        `)
+        `);
     });
     //pulls games information from Menu api
     data.games.forEach(function(games){
-        $('.container').append(`
+        $('.menu').append(`
                 <div class="play">
                     <div class="game-name">
                     ${games.item}
@@ -58,9 +58,9 @@ function mobileMenu (data){
                     ${games.platform}
                     </div>
                 </div>
-        `)
+        `);
     });
-};
+}
 
 
 
