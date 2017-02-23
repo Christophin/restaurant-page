@@ -64,7 +64,7 @@ function mobileMenu (data){
 
 //pulls NEWS information from NEWS api
 function mobileNews (data) {
-    data.news.forEach(function(news){
+    data.forEach(function(news){
         $(".news").append(`
             <div class="news">
                 <div class="title">
@@ -84,7 +84,7 @@ function mobileNews (data) {
 
 //pulls SPECIAL information from SPECIAL api
 function mobileSpecial (data) {
-    data.news.forEach(function(special){
+    data.forEach(function(special){
         $(".specials").append(`
             <div class="special-id">
             ${special.id}
