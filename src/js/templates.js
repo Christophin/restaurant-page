@@ -1,6 +1,40 @@
 import $ from 'jquery';
 
 function mobileMenu (data){
+    //pulls BEER information from MENU api
+    data.Beer.forEach(function(beer){
+        $('.menu').append(`
+                <div class='beers'>
+                    <div class='beer-name'>
+                    ${beer.item}
+                    </div>
+                    <div class='beer-price'>
+                    ${beer.price}
+                    </div>
+                    <div class='beer-style'>
+                    ${beer.style}
+                    </div>
+                    <div class='beer-abv'>
+                    ${beer.abv}
+                    </div>
+                    <div class='beer-desc'>
+                    ${beer.description}
+                    </div>
+                    <div class='beer-allergies'>
+                    ${beer.allergies}
+                    </div>
+                    <div class='beer-fav'>
+                    ${beer.favorite}
+                    </div>
+                    <div class='beer-bottle'>
+                    ${beer.bottle}
+                    </div>
+                    <div class='beer-draught'>
+                    ${beer.draught}
+                    </div>
+                </div>
+        `);
+    });
     //pulls ENTREE information from MENU api
     data.entrees.forEach(function(entrees){
         $('.menu').append(`
