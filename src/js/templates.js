@@ -1,9 +1,9 @@
 import $ from 'jquery';
 
 function mobileMenu (data){
-    //pulls entree information from Menu api
+    //pulls ENTREE information from MENU api
     data.entrees.forEach(function(entrees){
-        $('.container').append(`
+        $('.menu').append(`
                 <div class="food">
                     <div class="entree-name">
                     ${entrees.item}
@@ -29,9 +29,9 @@ function mobileMenu (data){
                 </div>
         `)
     });
-    //pulls games information from Menu api
+    //pulls GAMES information from MENU api
     data.games.forEach(function(games){
-        $('.container').append(`
+        $('.menu').append(`
                 <div class="play">
                     <div class="game-name">
                     ${games.item}
@@ -62,6 +62,41 @@ function mobileMenu (data){
     });
 };
 
+//pulls NEWS information from NEWS api
+function mobileNews (data) {
+    data.news.forEach(function(news){
+        $(".news").append(`
+            <div class="news">
+                <div class="title">
+                ${news.title}
+                </div>
+                <div class="date-published">
+                ${news.date}
+                </div>
+                <div class="post">
+                ${news.post}
+                </div>
+            </div>
+            `)
+        }
+    )
+}
+
+//pulls SPECIAL information from SPECIAL api
+function mobileSpecial (data) {
+    data.news.forEach(function(special){
+        $(".specials").append(`
+            <div class="special-id">
+            ${special.id}
+            </div>
+            <div class="menu-item">
+            ${special.menu_item_id}
+            </div>
+            `)
+        }
+    )
+}
 
 
-export { mobileMenu };
+
+export { mobileMenu, mobileNews, mobileSpecial };
