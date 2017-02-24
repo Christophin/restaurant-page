@@ -1,4 +1,4 @@
-//Mobile Achor Points
+//Mobile Anchor Points
 function mobileAnchors() {
     return `
         <div class="header">
@@ -62,11 +62,25 @@ function mobileAnchors() {
 function desktopAnchors()   {
     return `
         <div class="level header">
-            <div class="logo level-left"></div>
+            <div class="logo level-left">
+                <img src='./images/prost_logo.png'/>
+            </div>
             <div class="social-icons level-right">
-                <div class="twitter"></div>
-                <div class="facebook"></div>
-                <div class="instagram"></div>
+                <div class="twitter">
+                    <a href='https://twitter.com/prostbierhaus'>
+                        <i class="fa fa-twitter-square is-large" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="facebook">
+                    <a href="https://www.facebook.com/prost.bierhaus.5">
+                        <i class="fa fa-facebook-official is-large" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="instagram">
+                    <a href='https://www.instagram.com/prost_bierhaus/'>
+                        <i class="fa fa-instagram is-large" aria-hidden="true"></i>
+                    </a>
+                </div>
             </div>
         </div>
         <div class="main">
@@ -80,13 +94,29 @@ function desktopAnchors()   {
                 </div>
             </div>
             <div class="columns content2">
-                <div class="column tabs is-two-thirds"></div>
                 <div class="column tabsBox is-two-thirds">
                     <div class="tabs">
                         <ul>
-                        <li class="is-active"><a>Our Story</a></li>
-                        <li><a>Menu</a></li>
-                        <li><a>reservations</a></li>
+                            <li class="storyTab">
+                                    <a>Our Story</a></li>
+                                <li>
+                                    <a class='menuTab'>Menu</a>
+                                <h2>
+                                    <h3 class='beers'>
+                                    </h3>
+                                </h2>
+                                <h2>
+                                    <h3 class='food'>
+                                    </h3>
+                                </h2>
+                                <h2>
+                                    <h3 class='play'>
+                                    </h3>
+                                </h2>
+                        </li>
+                        <li>
+                            <a class='reservationTab'>Reservations</a>
+                        </li>
                         </ul>
                         </div>
                     </div>
