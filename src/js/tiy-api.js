@@ -1,5 +1,5 @@
 import $ from 'jquery';
-
+import { specialGenerator } from './templates';
 // grabs our menu data
 function grabMenu () {
     return $.ajax({
@@ -26,16 +26,16 @@ function grabNews () {
 }
 
 //uses the specials api menu id to grab the correct menu item.
-//TODO ----THIS IS NOT WORKING YET----- TODO
+function specialBuilder (menuId) {
+    grabMenu().then(function (menuData) {
+        Object.values(menuData).reduce(function(a,b) {
+            return a.concat(b);
+        }).filter(function(item)   {
+            if (item.id === menuId) {
+                specialGenerator(item);
+            }
+        });
+    });
+}
 
-// function specialGeneration (menuId) {
-//     grabMenu().then.forEach(function(menus) {
-//         menus.filter(function(item)   {
-//             if (item.id === menuId) {
-//                 return item;
-//             }
-//         });
-//     });
-// }
-
-export  { grabMenu, grabSpecial, grabNews };
+export  { grabMenu, grabSpecial, grabNews, specialBuilder };
