@@ -96,40 +96,6 @@ function mobileMenu (data){
     });
 }
 
-//pulls NEWS information from NEWS api
-// we are putting a box with the same class inside this :/
-function mobileNews (data) {
-    $('.news').append(`
-        <div class='news'>
-            <div class='title'>
-                ${data.title}
-            </div>
-            <div class='date-published'>
-                ${data.date_published}
-            </div>
-            <div class='post'>
-                ${data.post}
-            </div>
-        </div>
-    `);
-}
-
-function specialGenerator(item) {
-    $('.specials').append(`
-        <div class="special">
-            <div class='special-name'>${item.item}</div>
-            <div class='special-price'>${item.price}</div>
-            <div class='special.desc'>${item.description}</div>
-        </div>
-    `);
-}
-
-
-//pulls SPECIAL information from SPECIAL api
-function mobileSpecial (data) {
-    specialBuilder(data.menu_item_id);
-}
-
 //uses DESKTOP anchors
 function desktopMenu (data){
 
@@ -223,7 +189,56 @@ function desktopMenu (data){
     });
 }
 
+//pulls NEWS information from NEWS api
+// we are putting a box with the same class inside this :/
+function mobileNews (data) {
+    $('.news').append(`
+        <div class='news'>
+            <div class='title'>
+                ${data.title}
+            </div>
+            <div class='date-published'>
+                ${data.date_published}
+            </div>
+            <div class='post'>
+                ${data.post}
+            </div>
+        </div>
+    `);
+}
+
+function specialGenerator(item) {
+    $('.specials').append(`
+        <div class="special">
+            <div class='special-name'>${item.item}</div>
+            <div class='special-price'>${item.price}</div>
+            <div class='special.desc'>${item.description}</div>
+        </div>
+    `);
+}
 
 
+//pulls SPECIAL information from SPECIAL api
+function mobileSpecial (data) {
+    specialBuilder(data.menu_item_id);
+}
 
-export { mobileMenu, mobileNews, mobileSpecial, specialGenerator, desktopMenu };
+// takes the data we get back from searchFlickr and stores the picture ids in imgIds
+function processFlickr(data)    {
+    for (var i = 0; i < 5; i++) {
+        var photo = data.photos.photo[i];
+        $('.photos').append(`
+            <div class="photo photo${photo.id}">
+                <img src="https://farm${photo.farm}.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}.jpg"
+            </div>
+        `);
+    }
+    var special = data.photos.photo[5];
+    $('.specials').prepend(`
+        <div class="photo photo${special.id}">
+            <img src="https://farm${special.farm}.staticflickr.com/${special.server}/${special.id}_${special.secret}.jpg"
+        </div>
+    `);
+}
+
+export { mobileMenu, mobileNews, mobileSpecial, specialGenerator, desktopMenu, processFlickr };

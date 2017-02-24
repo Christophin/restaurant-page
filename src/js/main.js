@@ -2,7 +2,7 @@ import $ from 'jquery';
 import {searchFlickr} from './flickr-api';
 import { grabMenu, grabSpecial, grabNews } from './tiy-api';
 import {mobileAnchors, desktopAnchors} from './anchors.js';
-import { mobileMenu, mobileNews, mobileSpecial, desktopMenu } from './templates';
+import { mobileMenu, mobileNews, mobileSpecial, desktopMenu, processFlickr } from './templates';
 import {buildMap} from './googleMaps.js';
 import {accordion} from './accordion-function';
 
@@ -20,7 +20,7 @@ breakPoint();
 accordion();
 
 // api requests
-searchFlickr();
+searchFlickr().then(processFlickr);
 grabMenu().then(function(data)  {
     if (window.innerWidth <= 650)   {
         mobileMenu(data);
