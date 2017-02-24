@@ -3,95 +3,91 @@ import $ from 'jquery';
 function mobileMenu (data){
     //pulls BEER information from MENU api
     data.Beer.forEach(function(beer){
-        $('.menu').append(`
-                <div class='beers'>
-                    <div class='beer-name'>
+        $('.beers').append(`
+
+                    <h3 class='beer-name level-left'>
                     ${beer.item}
-                    </div>
-                    <div class='beer-price'>
-                    ${beer.price}
-                    </div>
-                    <div class='beer-style'>
+                        <span class='beer-price level-right'>
+                            $${beer.price}
+                        </span>
+                    </h3>
+                    <p class='beer-style'>
                     ${beer.style}
-                    </div>
-                    <div class='beer-abv'>
-                    ${beer.abv}
-                    </div>
-                    <div class='beer-desc'>
-                    ${beer.description}
-                    </div>
-                    <div class='beer-allergies'>
-                    ${beer.allergies}
-                    </div>
-                    <div class='beer-fav'>
-                    ${beer.favorite}
-                    </div>
-                    <div class='beer-bottle'>
-                    ${beer.bottle}
-                    </div>
-                    <div class='beer-draught'>
-                    ${beer.draught}
-                    </div>
-                </div>
+                        <span class='beer-abv'>
+                            ${beer.abv}%
+                        </span>
+                        <span class='beer-desc'>
+                            ${beer.description}
+                        </span>
+                        <span class='beer-allergies'>
+                            ${beer.allergies}
+                        </span>
+                        <span class='beer-fav'>
+                            ${beer.favorite}
+                        </span>
+                        <span class='beer-bottle'>
+                            ${beer.bottle}
+                        </span>
+                        <span class='beer-draught'>
+                            ${beer.draught}
+                        </span>
+                    </p>
         `);
     });
     //pulls ENTREE information from MENU api
     data.entrees.forEach(function(entrees){
-        $('.menu').append(`
-                <div class='food'>
-                    <div class='entree-name'>
+        $('.food').append(`
+                    <h3 class='entree-name level-left'>
                     ${entrees.item}
-                    </div>
-                    <div class='entree-price'>
-                    ${entrees.price}
-                    </div>
-                    <div class='entree-desc'>
-                    ${entrees.description}
-                    </div>
-                    <div class='entree-allergies'>
-                    ${entrees.allergies}
-                    </div>
-                    <div class='entree-fav'>
-                    ${entrees.favorite}
-                    </div>
-                    <div class='entree-spicy'>
-                    ${entrees.spicy}
-                    </div>
-                    <div class='entree-vegan'>
-                    ${entrees.vegan}
-                    </div>
-                </div>
+                        <span class='entree-price level-right'>
+                            $${entrees.price}
+                        </span>
+                    </h3>
+                    <p class='entree-desc'>
+                            ${entrees.description}
+                        <span class='entree-allergies'>
+                            ${entrees.allergies}
+                        </span>
+                        <span class='entree-fav'>
+                            ${entrees.favorite}
+                        </span>
+                        <span class='entree-spicy'>
+                            ${entrees.spicy}
+                        </span>
+                        <span class='entree-vegan'>
+                            ${entrees.vegan}
+                        </span>
+                    </p>
         `);
     });
     //pulls GAMES information from MENU api
     data.games.forEach(function(games){
-        $('.menu').append(`
-                <div class='play'>
-                    <div class='game-name'>
-                    ${games.item}
-                    </div>
-                    <div class='game-price'>
-                    ${games.price}
-                    </div>
-                    <div class='game-desc'>
-                    ${games.description}
-                    </div>
-                    <div class='game-fav'>
-                    ${games.favorite}
-                    </div>
-                    <div class='game-online'>
-                    ${games.online}
-                    </div>
-                    <div class='game-multi'>
-                    ${games.multiplayer}
-                    </div>
-                    <div class='game-rating'>
-                    ${games.rating}
-                    </div>
-                    <div class='game-platform>
-                    ${games.platform}
-                    </div>
-                </div>
+        $('.play').append(`
+                <h3 class='game-name level-left'>
+                        ${games.item}
+                    <span class='game-price level-right'>
+                        $${games.price}
+                    </span>
+                </h3>
+                    <p class='game-desc'>
+                            ${games.description}
+                        <span class='game-fav'>
+                            ${games.favorite}
+                        </span>
+                        <span class='game-online'>
+                            ${games.online}
+                        </span>
+                        <span class='game-multi'>
+                            ${games.multiplayer}
+                        </span>
+                        <span class='game-rating'>
+                            ${games.rating}
+                        </span>
+                        <span class='game-platform>
+                            ${games.platform}
+                        </span>
+                    </p>
+                </h2>
         `);
     });
 }
