@@ -1,5 +1,8 @@
 import $ from 'jquery';
 
+
+//uses MOBILE anchors
+
 function mobileMenu (data){
     //pulls BEER information from MENU api
     data.Beer.forEach(function(beer){
@@ -115,6 +118,99 @@ function mobileSpecial (data) {
     return data.menu_item_id;
 }
 
+//uses DESKTOP anchors
+function desktopMenu (data){
+
+    //pulls BEER information from MENU api
+    data.Beer.forEach(function(beer){
+        $('.beers').append(`
+
+                    <h3 class='beer-name is-left'>
+                    ${beer.item}
+                        <span class='beer-price is-right'>
+                            $${beer.price}
+                        </span>
+                    </h3>
+                    <h4 class='beer-style'>
+                        ${beer.style}
+                            <span class='beer-abv'>
+                                ${beer.abv}%
+                            </span>
+                        <h5 class='beer-desc'>
+                                ${beer.description}
+                        </h5>
+                            <span class='beer-allergies'>
+                                ${beer.allergies}
+                            </span>
+                            <span class='beer-fav'>
+                                ${beer.favorite}
+                            </span>
+                            <span class='beer-bottle'>
+                                ${beer.bottle}
+                            </span>
+                            <span class='beer-draught'>
+                                ${beer.draught}
+                            </span>
+                    </h4>
+        `);
+    });
+    //pulls ENTREE information from MENU api
+    data.entrees.forEach(function(entrees){
+        $('.food').append(`
+                    <h3 class='entree-name level-left'>
+                    ${entrees.item}
+                        <span class='entree-price level-right'>
+                            $${entrees.price}
+                        </span>
+                    </h3>
+                    <h5 class='entree-desc'>
+                            ${entrees.description}
+                    </h5>
+                        <span class='entree-allergies'>
+                            ${entrees.allergies}
+                        </span>
+                        <span class='entree-fav'>
+                            ${entrees.favorite}
+                        </span>
+                        <span class='entree-spicy'>
+                            ${entrees.spicy}
+                        </span>
+                        <span class='entree-vegan'>
+                            ${entrees.vegan}
+                        </span>
+        `);
+    });
+    //pulls GAMES information from MENU api
+    data.games.forEach(function(games){
+        $('.play').append(`
+                <h3 class='game-name level-left'>
+                        ${games.item}
+                    <span class='game-price level-right'>
+                        $${games.price}
+                    </span>
+                </h3>
+                    <h5 class='game-desc'>
+                            ${games.description}
+                    </h5>
+                        <span class='game-fav'>
+                            ${games.favorite}
+                        </span>
+                        <span class='game-online'>
+                            ${games.online}
+                        </span>
+                        <span class='game-multi'>
+                            ${games.multiplayer}
+                        </span>
+                        <span class='game-rating'>
+                            ${games.rating}
+                        </span>
+                        <span class='game-platform>
+                            ${games.platform}
+                        </span>
+        `);
+    });
+}
 
 
-export { mobileMenu, mobileNews, mobileSpecial };
+
+export { mobileMenu, mobileNews, mobileSpecial, desktopMenu };

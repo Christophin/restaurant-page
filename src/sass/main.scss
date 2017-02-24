@@ -4,7 +4,7 @@
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;
           box-sizing: border-box;
-          font-family: 'UnifrakturMaguntia', cursive;
+        //  font-family: 'UnifrakturMaguntia', cursive;
 }
 
 .mapBox    {
@@ -17,6 +17,26 @@
     height: 100%;
 }
 
+//*THIS CODE IS FOR DESKTOP*
+.logo {
+    height: 15%;
+    width: 15%;
+}
+
+.tabs {
+
+        h2 {
+            display: none;
+        }
+
+        h2:active {
+        display: inline-block;
+    }
+}
+
+
+
+//*THIS CODE IS FOR MOBILE*
 .logo {
     margin: 0 auto;
     width: 50%;
@@ -83,7 +103,4 @@
   color: #000000;
   line-height: 1.3rem;
   border-radius: 5px;
-}
-.accordion .opened-for-codepen {
-  display: block;
 }
