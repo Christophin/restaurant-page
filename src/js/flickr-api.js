@@ -11,37 +11,16 @@ function searchFlickr ()  {
             api_key: `${FL_KEY}`,
             format: 'json',
             nojsoncallback: 1,
-            tags: 'german beer',
+            tags: 'charcuterie',
         },
     });
 }
 
-// this will store the ids we get back from search flickr
-var imgIds = [];
-
-// takes the data we get back from searchFlickr and stores the picture ids in imgIds
-function processFlickr(data)    {
-    data.photos.photo.forEach(function(image) {
-        imgIds.push(image.id);
-    });
-}
-
-// indexes through our image ids and requests urls for each image. this will need a .promiseAll
-imgIds.forEach(function(image)  {
-    return $.ajax({
-        url: 'http://api.flickr.com/services/rest/',
-        data:   {
-            method: 'flickr.photos.getSizes',
-            api_key: `${FL_KEY}`,
-            format: 'json',
-            nojsoncallback: 1,
-            photo_id: `${image}`
-        }
-    });
-});
 
 
-export {searchFlickr, processFlickr};
+
+
+export {searchFlickr};
 
 
 

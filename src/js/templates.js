@@ -127,6 +127,22 @@ function mobileSpecial (data) {
     specialBuilder(data.menu_item_id);
 }
 
+// takes the data we get back from searchFlickr and stores the picture ids in imgIds
+function processFlickr(data)    {
+    for (var i = 0; i < 5; i++) {
+        var photo = data.photos.photo[i];
+        $('.photos').append(`
+            <div class="photo photo${photo.id}">
+                <img src="https://farm${photo.farm}.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}.jpg"
+            </div>
+        `);
+    }
+    var special = data.photos.photo[5];
+    $('.specials').prepend(`
+        <div class="photo photo${special.id}">
+            <img src="https://farm${special.farm}.staticflickr.com/${special.server}/${special.id}_${special.secret}.jpg"
+        </div>
+    `);
+}
 
-
-export { mobileMenu, mobileNews, mobileSpecial, specialGenerator };
+export { mobileMenu, mobileNews, mobileSpecial, specialGenerator, processFlickr };
