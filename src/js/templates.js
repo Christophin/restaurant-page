@@ -5,31 +5,31 @@ function mobileMenu (data){
     data.Beer.forEach(function(beer){
         $('.beers').append(`
 
-                    <h3 class='beer-name'>
+                    <h3 class='beer-name level-left'>
                     ${beer.item}
-                        <span class='beer-price'>
-                        $${beer.price}
+                        <span class='beer-price level-right'>
+                            $${beer.price}
                         </span>
                     </h3>
                     <p class='beer-style'>
                     ${beer.style}
                         <span class='beer-abv'>
-                        ${beer.abv}
+                            ${beer.abv}%
                         </span>
                         <span class='beer-desc'>
-                        ${beer.description}
+                            ${beer.description}
                         </span>
                         <span class='beer-allergies'>
-                        ${beer.allergies}
+                            ${beer.allergies}
                         </span>
                         <span class='beer-fav'>
-                        ${beer.favorite}
+                            ${beer.favorite}
                         </span>
                         <span class='beer-bottle'>
-                        ${beer.bottle}
+                            ${beer.bottle}
                         </span>
                         <span class='beer-draught'>
-                        ${beer.draught}
+                            ${beer.draught}
                         </span>
                     </p>
         `);
@@ -37,25 +37,25 @@ function mobileMenu (data){
     //pulls ENTREE information from MENU api
     data.entrees.forEach(function(entrees){
         $('.food').append(`
-                    <h3 class='entree-name'>
+                    <h3 class='entree-name level-left'>
                     ${entrees.item}
-                    </h3>
-                    <h3 class='entree-price'>
-                    $${entrees.price}
+                        <span class='entree-price level-right'>
+                            $${entrees.price}
+                        </span>
                     </h3>
                     <p class='entree-desc'>
-                        ${entrees.description}
+                            ${entrees.description}
                         <span class='entree-allergies'>
-                        ${entrees.allergies}
+                            ${entrees.allergies}
                         </span>
                         <span class='entree-fav'>
-                        ${entrees.favorite}
+                            ${entrees.favorite}
                         </span>
                         <span class='entree-spicy'>
-                        ${entrees.spicy}
+                            ${entrees.spicy}
                         </span>
                         <span class='entree-vegan'>
-                        ${entrees.vegan}
+                            ${entrees.vegan}
                         </span>
                     </p>
         `);
@@ -63,26 +63,28 @@ function mobileMenu (data){
     //pulls GAMES information from MENU api
     data.games.forEach(function(games){
         $('.play').append(`
-                <h3 class='game-name'>
-                ${games.item}
-                <span class='game-price'>$${games.price}</span>
+                <h3 class='game-name level-left'>
+                        ${games.item}
+                    <span class='game-price level-right'>
+                        $${games.price}
+                    </span>
                 </h3>
                     <p class='game-desc'>
-                        ${games.description}
+                            ${games.description}
                         <span class='game-fav'>
-                        ${games.favorite}
+                            ${games.favorite}
                         </span>
                         <span class='game-online'>
-                        ${games.online}
+                            ${games.online}
                         </span>
                         <span class='game-multi'>
-                        ${games.multiplayer}
+                            ${games.multiplayer}
                         </span>
                         <span class='game-rating'>
-                        ${games.rating}
+                            ${games.rating}
                         </span>
                         <span class='game-platform>
-                        ${games.platform}
+                            ${games.platform}
                         </span>
                     </p>
                 </h2>
