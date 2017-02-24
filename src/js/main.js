@@ -4,9 +4,8 @@ import { grabMenu, grabSpecial, grabNews } from './tiy-api';
 import {mobileAnchors, desktopAnchors} from './anchors.js';
 import { mobileMenu, mobileNews, mobileSpecial } from './templates';
 import {buildMap} from './googleMaps.js';
+import {accordion} from './accordion-function';
 
-// api requests
-searchFlickr();
 
 // creates our js mobile breakpoint
 function breakPoint ()  {
@@ -18,6 +17,7 @@ function breakPoint ()  {
 }
 
 breakPoint();
+accordion();
 
 // api requests
 searchFlickr();

@@ -2,25 +2,57 @@
 function mobileAnchors() {
     return `
         <div class="header">
-            <div class="logo"></div>
-            <div class="social-icons">
-                <div class="twitter"></div>
-                <div class="facebook"></div>
-                <div class="instagram"></div>
+            <div class="logo">
+            <img src='./images/prost_logo.png'/>
+            </div>
+            <div class="social-icons level">
+                <div class="twitter">
+                    <a href='https://twitter.com/prostbierhaus'>
+                        <i class="fa fa-twitter-square is-half is-offset-one-quarter" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="facebook">
+                    <a href="https://www.facebook.com/prost.bierhaus.5">
+                        <i class="fa fa-facebook-official is-half is-offset-one-quarter" aria-hidden="true"></i>
+                    </a>
+                </div>
+                <div class="instagram">
+                    <a href='https://www.instagram.com/prost_bierhaus/'>
+                        <i class="fa fa-instagram is-half is-offset-one-quarter" aria-hidden="true"></i>
+                    </a>
+                </div>
             </div>
         </div>
         <div class="accordion">
-            <div class="news"></div>
-            <div class="specials"></div>
-            <div class="location">
+            <h1 class="news">Latest News</h1>
+            <h1 class="specials">Today's Special</h1>
+            <h1 class="location">
+            Location
                 <div class='mapBox'>
                     <div id="map"></div>
                 </div>
-            </div>
-            <div class="story"></div>
-            <div class="menu"></div>
-            <div class="reservations"></div>
-            <div class="photo"></div>
+            </h1>
+            <h1 class="story">Our Story</h1>
+            <h1 class="menu">
+                Menu
+                    <h2>
+                    Beer
+                        <h3 class='beers'>
+                        </h3>
+                    </h2>
+                    <h2>
+                    Entrees
+                        <h3 class='food'>
+                        </h3>
+                    </h2>
+                    <h2>
+                    Games
+                        <h3 class='play'>
+                        </h3>
+                    </h2>
+            </h1>
+            <h1 class="reservations">Reservations</h1>
+            <h1 class="photo">Photos</h1>
         </div>
     `;
 }
