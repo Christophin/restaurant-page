@@ -18,6 +18,7 @@
 }
 
 //*THIS CODE IS FOR DESKTOP*
+@media (min-width: 601px)    {
 .logo {
     height: 15%;
     width: 15%;
@@ -33,10 +34,11 @@
         display: inline-block;
     }
 }
-
+}
 
 
 //*THIS CODE IS FOR MOBILE*
+@media (max-width:650px) {
 .logo {
     margin: 0 auto;
     width: 50%;
@@ -103,4 +105,5 @@
   color: #000000;
   line-height: 1.3rem;
   border-radius: 5px;
+}
 }
