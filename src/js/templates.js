@@ -1,4 +1,5 @@
 import $ from 'jquery';
+import {specialBuilder} from './tiy-api';
 
 function mobileMenu (data){
     //pulls BEER information from MENU api
@@ -97,6 +98,7 @@ function mobileMenu (data){
 }
 
 //pulls NEWS information from NEWS api
+// we are putting a box with the same class inside this :/
 function mobileNews (data) {
     $('.news').append(`
         <div class='news'>
@@ -113,12 +115,22 @@ function mobileNews (data) {
     `);
 }
 
+function specialGenerator(item) {
+    $('.specials').append(`
+        <div class="special">
+            <div class='special-name'>${item.item}</div>
+            <div class='special-price'>${item.price}</div>
+            <div class='special.desc'>${item.description}</div>
+        </div>
+    `);
+}
+
 
 //pulls SPECIAL information from SPECIAL api
 function mobileSpecial (data) {
-    return data.menu_item_id;
+    specialBuilder(data.menu_item_id);
 }
 
 
 
-export { mobileMenu, mobileNews, mobileSpecial };
+export { mobileMenu, mobileNews, mobileSpecial, specialGenerator };
