@@ -26,6 +26,7 @@
         background-attachment: fixed;
         background-size: 1450px 1000px;
         background-position: 1px -60px;
+        color: white;
     };
 
     .container    {
@@ -112,6 +113,12 @@
         transition: all .8s ease .15s;
     }
 
+    .tabs    {
+        .storyTab, .menuTab, .reservationTab    {
+            color: white;
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        }
+    }
     .menuTitle    {
         font-size: 3em;
     }
@@ -122,7 +129,7 @@
 
     .beer-name, .entree-name, .game-name    {
         text-align: left;
-        font-size: 1.5em;
+        font-size: 1.75em;
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
@@ -131,7 +138,7 @@
     .beer-price, .entree-price, .game-price    {
         float: right;
         position: relative;
-        margin-top: -27px;
+        margin-top: -37px;
         font-size: 1.5em;
     }
 
@@ -139,17 +146,14 @@
         text-align: left;
     }
 
+    .beer-abv    {
+        float: right;
+        position: relative;
+        margin-top: -21px;
+    }
+
 
 }
-
-// .entree-name:after, .beer-name:after, .game-name:after {
-//       text-overflow: ;
-//       content: "..........................................................................................";
-//       height: 19px;
-//       white-space: nowrap;
-//       overflow: hidden;
-//   // right: 100%;
-// }
 
 
 //*THIS CODE IS FOR MOBILE*

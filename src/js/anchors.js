@@ -122,10 +122,10 @@ function desktopAnchors()   {
             </div>
             <div class="columns content2">
                 <div class="column tabsBox is-two-thirds">
-                    <div class="tabs">
+                    <div class="tabs is-large">
                         <ul>
-                            <li class="storyTab">
-                                <a>Our Story</a>
+                            <li>
+                                <a class="storyTab">Our Story</a>
                             </li>
                             <li>
                                 <a class='menuTab'>Menu</a>
