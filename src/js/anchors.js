@@ -138,8 +138,11 @@ function desktopAnchors()   {
                     <div class="fillBox">
                         <div class='storyBox tabShown'></div>
                         <div class='menuBox'>
+                            <div class='menuTitle'>Beer:</div>
                             <div class='beers'></div>
+                            <div class='menuTitle'>Entrees:</div>
                             <div class='food'></div>
+                            <div class='menuTitle'>Games:</div>
                             <div class='play'></div>
                         </div>
                         <div class='reservationBox'>

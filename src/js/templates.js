@@ -108,10 +108,11 @@ function desktopMenu (data){
 
     //pulls BEER information from MENU api
     data.Beer.forEach(function(beer){
+        // I'm so sorry for the commas
         $('.beers').append(`
                 <div class='beer'>
                     <div class='beer-name is-left'>
-                        ${beer.item}
+                        ${beer.item}......................................................................................................................................................................................
                     </div>
                     <div class='beer-price is-right'>
                         $${beer.price}
@@ -136,13 +137,14 @@ function desktopMenu (data){
     });
     //pulls ENTREE information from MENU api
     data.entrees.forEach(function(entrees){
+        var name = entrees.item.slice(0,44);
         $('.food').append(`
-                    <div class='entree level-left'>
+                    <div class='entree is-left'>
                         <div class='entree-name'>
-                            ${entrees.item}
+                            ${name}.............................................................................................................................................................................
                         </div>
-                        <div class='entree-price level-right'>
-                            ${entrees.price}
+                        <div class='entree-price is-right'>
+                            $${entrees.price}
                         </div>
                         <div class='entree-desc'>
                             ${entrees.description}
@@ -159,12 +161,12 @@ function desktopMenu (data){
     //pulls GAMES information from MENU api
     data.games.forEach(function(games){
         $('.play').append(`
-                <div class='game level-left'>
+                <div class='game is-left'>
                     <div class='game-name'>
-                        ${games.item}
+                        ${games.item}..................................................................................................................................................................................
                     </div>
-                    <div class='game-price level-right'>
-                        ${games.price}
+                    <div class='game-price is-right'>
+                        $${games.price}
                     </div>
                     <div class='game-desc'>
                         ${games.description}

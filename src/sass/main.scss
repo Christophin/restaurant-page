@@ -61,7 +61,8 @@
         padding: 5px;
         border-radius: 30px;
         opacity: 0.8;
-        margin-right: 30px;
+        margin-left: 835px;
+        position: fixed;
     }
 
     .fa-twitter-square    {
@@ -82,10 +83,12 @@
         background-position: -174px -174px;
         padding-bottom: 400px;
         width: 1026px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 20px black;
     }
 
     .fillBox    {
-        background-color: lightgrey;
+        background-color: none;
         height: auto;
         width: 600px;
         overflow: scroll;
@@ -109,14 +112,44 @@
         transition: all .8s ease .15s;
     }
 
+    .menuTitle    {
+        font-size: 3em;
+    }
+
+    .menuBox   {
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
+
+    .beer-name, .entree-name, .game-name    {
+        text-align: left;
+        font-size: 1.5em;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .beer-price, .entree-price, .game-price    {
+        float: right;
+        position: relative;
+        margin-top: -27px;
+        font-size: 1.5em;
+    }
+
+    .beer-style    {
+        text-align: left;
+    }
+
+
 }
 
-.entree-price:before, .beer-price:before, .game-price:before {
-      text-overflow: ellipsis;
-      content: "................................................................";
-      height: 19px;
-  // right: 100%;
-}
+// .entree-name:after, .beer-name:after, .game-name:after {
+//       text-overflow: ;
+//       content: "..........................................................................................";
+//       height: 19px;
+//       white-space: nowrap;
+//       overflow: hidden;
+//   // right: 100%;
+// }
 
 
 //*THIS CODE IS FOR MOBILE*

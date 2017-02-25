@@ -24,7 +24,7 @@ $('.menuTab').click(menuFill);
 $('.storyTab').click(storyFill);
 $('.reservationTab').click(reservationFill);
 // api requests
-searchFlickr('german beer').then(processFlickr);
+searchFlickr('german pub').then(processFlickr);
 searchFlickr('seared scallops').then(specialsFlickr);
 var menuGrabber = function() {
     grabMenu().then(function(data)  {
