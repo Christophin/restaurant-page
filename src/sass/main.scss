@@ -101,6 +101,13 @@
 
 }
 
+.entree-price:before, .beer-price:before, .game-price:before {
+      text-overflow: ellipsis;
+      content: "................................................................";
+      height: 19px;
+  // right: 100%;
+}
+
 
 //*THIS CODE IS FOR MOBILE*
 @media (max-width:650px) {
