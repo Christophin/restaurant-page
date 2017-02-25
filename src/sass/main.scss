@@ -19,9 +19,51 @@
 
 //*THIS CODE IS FOR DESKTOP*
 @media (min-width: 651px)    {
+    body  {
+        width: 100%;
+        text-align: center;
+    };
+
+    .container    {
+        width: 1026px;
+    }
+
     .logo {
         height: 15%;
         width: 15%;
+    }
+
+    .twitter    {
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .facebook    {
+        margin-right: 15px;
+    }
+
+    .instagram    {
+        margin-right: 15px;
+    }
+
+    .social-icons    {
+        background-color: lightgrey;
+        padding: 5px;
+        border-radius: 30px;
+        opacity: 0.8;
+        margin-right: 30px;
+    }
+
+    .fa-twitter-square    {
+        color: black;
+    }
+
+    .fa-facebook-official    {
+        color: #DD0000;
+    }
+
+    .fa-instagram    {
+        color: #FFCE00;
     }
 
     .header    {
@@ -29,12 +71,14 @@
         background-size: 1200px 800px;
         background-position: -174px -174px;
         padding-bottom: 400px;
+        width: 1026px;
     }
 
     .fillBox    {
         background-color: lightgrey;
-        height: 400px;
+        height: 500px;
         width: 700px;
+        overflow: scroll;
     }
 
     .storyBox, .menuBox, .reservationBox    {
