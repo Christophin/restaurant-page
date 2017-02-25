@@ -49,19 +49,13 @@ function mobileMenu (data){
                     </h3>
                     <p class='entree-desc'>
                             ${entrees.description}
-                        <span class='entree-allergies'>
-                            ${entrees.allergies}
-                        </span>
-                        <span class='entree-fav'>
-                            ${entrees.favorite}
-                        </span>
-                        <span class='entree-spicy'>
-                            ${entrees.spicy}
-                        </span>
-                        <span class='entree-vegan'>
-                            ${entrees.vegan}
-                        </span>
                     </p>
+                    <div>
+                        <img src='./images/allergy-warning.png' class='icon'>
+                        <img src='./images/favorites.png' class='icon'>
+                        <img src='./images/spicy.png' class='icon'>
+                        <img src='./images/vegan.png' class='icon'>
+                    </div>
         `);
     });
     //pulls GAMES information from MENU api
