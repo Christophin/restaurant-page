@@ -100,13 +100,21 @@
         transition: all .8s ease .15s;
     }
 
+    .content1 {
+        height: 40%;
+        width: 99%;
+
+        .news, .specials, .location {
+            padding: 3%;
+            border-radius: 5px;
+            box-shadow: 5px 5px 20px black;
+        }
+    }
+
+
 }
 
-.content1 {
-    height: 40%;
-    width: 99%;
-    box-shadow: 5px 5px 20px black;
-}
+
 
 
 //*THIS CODE IS FOR MOBILE*
