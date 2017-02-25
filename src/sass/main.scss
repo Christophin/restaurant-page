@@ -5,6 +5,7 @@
      -moz-box-sizing: border-box;
           box-sizing: border-box;
         //  font-family: 'UnifrakturMaguntia', cursive;
+        img{ border-radius: 5px}
 }
 
 .mapBox    {
@@ -109,6 +110,18 @@
         transition: all .8s ease .15s;
     }
 
+    .content1 {
+        height: 40%;
+        width: 99%;
+
+        .news, .specials, .location {
+            padding: 3%;
+            border-radius: 5px;
+            box-shadow: 5px 5px 20px black;
+        }
+    }
+
+
 }
 
 .entree-price:before, .beer-price:before, .game-price:before {
@@ -117,6 +130,8 @@
       height: 19px;
   // right: 100%;
 }
+
+
 
 
 //*THIS CODE IS FOR MOBILE*
