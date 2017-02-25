@@ -128,7 +128,7 @@ function desktopMenu (data){
                     <div class='beerAttr'>
                         <div class='beerAllergy'><img src='./images/allergy-warning.png' class='icon'></div>
                         <div class='beerFavorites'><img src='./images/favorites.png' class='icon'></div>
-                        <div class='bottle>'<img src='./images/spicy.png' class='icon'></div>
+                        <div class='bottle'><img src='./images/spicy.png' class='icon'></div>
                         <div class='draught'><img src='./images/vegan.png' class='icon'></div>
                     </div>
                 </div>
@@ -150,7 +150,7 @@ function desktopMenu (data){
                         <div class='entree-attr'>
                             <div class='allergy'><img src='./images/allergy-warning.png' class='icon'></div>
                             <div class='favorites'><img src='./images/favorites.png' class='icon'></div>
-                            <div class='spicy>'<img src='./images/spicy.png' class='icon'></div>
+                            <div class='spicy'><img src='./images/spicy.png' class='icon'></div>
                             <div class='vegan'><img src='./images/vegan.png' class='icon'></div>
                         </div>
                     </div>
@@ -172,7 +172,7 @@ function desktopMenu (data){
                     <div class='game-attr'>
                         <div class='online'><img src='./images/allergy-warning.png' class='icon'></div>
                         <div class='multiplayer'><img src='./images/favorites.png' class='icon'></div>
-                        <div class='rating>'<img src='./images/spicy.png' class='icon'></div>
+                        <div class='rating'><img src='./images/spicy.png' class='icon'></div>
                         <div class='favorite'><img src='./images/vegan.png' class='icon'></div>
                     </div>
                 </div>
