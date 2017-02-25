@@ -84,17 +84,17 @@ function desktopAnchors()   {
             <div class="social-icons level-right">
                 <div class="twitter">
                     <a href='https://twitter.com/prostbierhaus'>
-                        <i class="fa fa-twitter-square is-large" aria-hidden="true"></i>
+                        <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
                     </a>
                 </div>
                 <div class="facebook">
                     <a href="https://www.facebook.com/prost.bierhaus.5">
-                        <i class="fa fa-facebook-official is-large" aria-hidden="true"></i>
+                        <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
                     </a>
                 </div>
                 <div class="instagram">
                     <a href='https://www.instagram.com/prost_bierhaus/'>
-                        <i class="fa fa-instagram is-large" aria-hidden="true"></i>
+                        <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
                     </a>
                 </div>
             </div>
