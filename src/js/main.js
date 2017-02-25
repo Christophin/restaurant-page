@@ -4,7 +4,7 @@ import { grabMenu, grabSpecial, grabNews } from './tiy-api';
 import {mobileAnchors, desktopAnchors} from './anchors.js';
 import { mobileMenu, mobileNews, mobileSpecial, desktopMenu, processFlickr } from './templates';
 import {buildMap} from './googleMaps.js';
-import {accordioning} from './accordion-function';
+import {accordioning, nestedAccordioning, menuFill, storyFill, reservationFill} from './accordion-function';
 
 
 // creates our js mobile breakpoint
@@ -19,6 +19,10 @@ function breakPoint ()  {
 breakPoint();
 //accordion();
 $('.section').click(accordioning);
+$('.section2').click(nestedAccordioning);
+$('.menuTab').click(menuFill);
+$('.storyTab').click(storyFill);
+$('.reservationTab').click(reservationFill);
 // api requests
 searchFlickr().then(processFlickr);
 var menuGrabber = function() {

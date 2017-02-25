@@ -114,28 +114,26 @@ function desktopAnchors()   {
                     <div class="tabs">
                         <ul>
                             <li class="storyTab">
-                                    <a>Our Story</a></li>
-                                <li>
-                                    <a class='menuTab'>Menu</a>
-                                <h2>
-                                    <h3 class='beers'>
-                                    </h3>
-                                </h2>
-                                <h2>
-                                    <h3 class='food'>
-                                    </h3>
-                                </h2>
-                                <h2>
-                                    <h3 class='play'>
-                                    </h3>
-                                </h2>
-                        </li>
-                        <li>
-                            <a class='reservationTab'>Reservations</a>
-                        </li>
+                                <a>Our Story</a>
+                            </li>
+                            <li>
+                                <a class='menuTab'>Menu</a>
+                            </li>
+                            <li>
+                                <a class='reservationTab'>Reservations</a>
+                            </li>
                         </ul>
-                        </div>
                     </div>
+                    <div class="fillBox">
+                        <div class='storyBox tabShown'></div>
+                        <div class='menuBox'>
+                            <div class='beers'></div>
+                            <div class='food'></div>
+                            <div class='play'></div>
+                        </div>
+                        <div class='reservationBox'></div>
+                    </div>
+                </div>
                 <div class="column photos"></div>
             </div>
         </div>
