@@ -78,7 +78,7 @@ function mobileAnchors() {
 function desktopAnchors()   {
     return `
         <div class="level header">
-            <div class="logo level-left">
+            <div class="logo level-right">
                 <img src='./images/prost_logo.png'/>
             </div>
             <div class="social-icons level-right">
