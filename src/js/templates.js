@@ -51,10 +51,10 @@ function mobileMenu (data){
                             ${entrees.description}
                     </p>
                     <div>
-                        <img src='./images/allergy-warning.png' class='icon'>
-                        <img src='./images/favorites.png' class='icon'>
-                        <img src='./images/spicy.png' class='icon'>
-                        <img src='./images/vegan.png' class='icon'>
+                        <div class='allergy'><img src='./images/allergy-warning.png' class='icon'>
+                        <div class='favorites'><img src='./images/favorites.png' class='icon'>
+                        <div class='spicy>'<img src='./images/spicy.png' class='icon'>
+                        <div class='vegan'><img src='./images/vegan.png' class='icon'>
                     </div>
         `);
     });
