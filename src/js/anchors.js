@@ -42,7 +42,12 @@ function mobileAnchors() {
             </div>
             <div class="section">
                 <h1>Our Story</h1>
-                <div class="story blurb"></div>
+                <div class="story blurb">
+                    <p>Guten tag! Welcome to the Prost! Bierhaus.
+                    <br>
+                    “Prost!” was started as an homage to a German “bierhaus” you might find in towns and villages across the country. Our founder wanted to take the essence of those alehouses his father and uncles frequented, and add a bit of his passion — video games. At this establishment you’ll get a bit of the old country infused with the games of tomorrow. So get your steins and grab you controllers and we’ll see you soon.
+                    </p>
+                </div>
             </div>
             <div class="section">
                 <h1>Menu</h1>
@@ -101,8 +106,30 @@ function desktopAnchors()   {
         </div>
         <div class="main">
             <div class="columns content1">
-                <div class="news column is-one-third"></div>
-                <div class="specials column"></div>
+                <div class="news column is-one-third">
+                        <h1>Latest News</h1>
+                            <p>Guten tag! As you may have heard our “Super Smash-ed Bros.” tournament is coming up.
+                            <br>
+                                Entry - $5
+                            <br>
+                                Entry (w. Sheik) -$15
+                            </p>
+                            <img src='./images/smashed-bros.jpg'>
+                        <p class='latestNews'>
+                            For all of you newbs, here are the rules:
+                            <br>
+                            1. If you are killed by another player, drink once.
+                            2. If you are knocked into the foreground/background by another player, drink twice.
+                            3. If you are killed by a CPU, drink twice the amount you would drink for a player kill.
+                            4. If you suicide, take a shot.
+                            5. If the stage kills you, take a shot.
+                            6. If you are killed by a player who is over 200%, take TWO shots.
+                            7. If you finish your drink before the round ends, you don't have to drink anymore for that round (keep count of what you missed), but must still take shots.
+                        </p>
+                </div>
+                <div class="specials column">
+                <h1>Today's Special</h1>
+                </div>
                 <div class="location column">
                     <div class='locationHeader'>Our Location</div>
                     <div class='mapBox'>
@@ -136,7 +163,12 @@ function desktopAnchors()   {
                         </ul>
                     </div>
                     <div class="fillBox">
-                        <div class='storyBox tabShown'></div>
+                        <div class='storyBox tabShown'>
+                            <p>Guten tag! Welcome to the Prost! Bierhaus.
+                            <br>
+                                “Prost!”, as we are affectionately known, was started as an homage to a German “bierhaus” you might find in towns and villages across the country. Our founder wanted to take the essence of those alehouses his father and uncles frequented, and add a bit of his passion — video games. At this establishment you’ll get a bit of the old country infused with the games of tomorrow. So get your steins and grab you controllers and we’ll see you soon.
+                            </p>
+                        </div>
                         <div class='menuBox'>
                             <div class='beers'></div>
                             <div class='food'></div>
