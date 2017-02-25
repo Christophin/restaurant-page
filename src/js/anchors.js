@@ -24,35 +24,51 @@ function mobileAnchors() {
             </div>
         </div>
         <div class="accordion">
-            <h1 class="news">Latest News</h1>
-            <h1 class="specials">Today's Special</h1>
-            <h1 class="location">
-            Location
-                <div class='mapBox'>
-                    <div id="map"></div>
+            <div class="section">
+                <h1>Latest News</h1>
+                <div class="news blurb"></div>
+            </div>
+            <div class="section">
+                <h1>Today's Special</h1>
+                <div class="specials blurb"></div>
+            </div>
+            <div class="section">
+                <h1 class="location">Location</h1>
+                <div class="blurb">
+                    <div class="mapBox">
+                        <div id="map"></div>
+                    </div>
                 </div>
-            </h1>
-            <h1 class="story">Our Story</h1>
-            <h1 class="menu">
-                Menu
-                    <h2>
-                    Beer
-                        <h3 class='beers'>
-                        </h3>
-                    </h2>
-                    <h2>
-                    Entrees
-                        <h3 class='food'>
-                        </h3>
-                    </h2>
-                    <h2>
-                    Games
-                        <h3 class='play'>
-                        </h3>
-                    </h2>
-            </h1>
-            <h1 class="reservations">Reservations</h1>
-            <h1 class="photo">Photos</h1>
+            </div>
+            <div class="section">
+                <h1>Our Story</h1>
+                <div class="story blurb"></div>
+            </div>
+            <div class="section">
+                <h1 class="menu">Menu</h1>
+                <div class="blurb">
+                    <div class="section2">
+                        <h2>Beer</h2>
+                        <div class='beers blurb2'></div>
+                    </div>
+                    <div class="section2">
+                        <h2>Entrees</h2>
+                        <div class='food blurb2'></div>
+                    </div>
+                    <div class="section2">
+                        <h2>Games</h2>
+                        <div class='play blurb2'></div>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h1>Reservations</h1>
+                <div class="reservations blurb"></div>
+            </div>
+            <div class="section">
+                <h1>Photos</h1>
+                <div class="photo blurb"></div>
+            </div>
         </div>
     `;
 }

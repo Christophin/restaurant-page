@@ -19,91 +19,128 @@
 
 //*THIS CODE IS FOR DESKTOP*
 @media (min-width: 651px)    {
-.logo {
-    height: 15%;
-    width: 15%;
-}
-
-.tabs {
-
-        h2 {
-            display: none;
-        }
-
-        h2:active {
-        display: inline-block;
+    .logo {
+        height: 15%;
+        width: 15%;
     }
-}
+
+    .tabs {
+
+            h2 {
+                display: none;
+            }
+
+            h2:active {
+            display: inline-block;
+        }
+    }
 }
 
 
 //*THIS CODE IS FOR MOBILE*
 @media (max-width:650px) {
-.logo {
-    margin: 0 auto;
-    width: 50%;
-}
+    .logo {
+        margin: 0 auto;
+        width: 50%;
+    }
 
-.social-icons {
-    display: inline-flex;
-    width: 50%;
-    margin: 0 auto;
-}
+    .social-icons {
+        display: inline-flex;
+        width: 50%;
+        margin: 0 auto;
+    }
 
-//Styling for the accordion
-.accordion {
-}
-.accordion h1, h2, h3, h4 {
-  cursor: pointer;
-}
-.accordion h1 {
-  padding: 15px 20px;
-  background-color: #000000;
-  font-family: serif;
-  font-size: 1.5rem;
-  font-weight: normal;
-  color: #FFCE00;
-}
-.accordion h1:hover {
-  color: #DD0000;
-}
-.accordion h1:first-child {
-  border-radius: 10px 10px 0 0;
-}
-.accordion h1:last-of-type {
-  border-radius: 0 0 10px 10px;
-}
-.accordion h1:not(:last-of-type) {
-  border-bottom: 1px dotted #FFCE00;
-}
-.accordion div, .accordion p {
-  display: none;
-}
-.accordion h2 {
-  padding: 5px 25px;
-  background-color: #FFCE00;
-  font-size: 1.1rem;
-  color: #000000;
-}
-.accordion h2:hover {
-  background-color: #FFCE00;
-}
-.accordion h3 {
-  padding: 5px 30px;
-  background-color: #b94152;
-  font-size: .9rem;
-  color: #ddd;
-}
-.accordion h3:hover {
-  background-color: #a93142;
-}
-.accordion p {
-  padding: 15px 35px;
-  background-color: #ddd;
-  font-family: serif;
-  font-size: .8rem;
-  color: #000000;
-  line-height: 1.3rem;
-  border-radius: 5px;
-}
+    //Styling for the accordion
+    .section  {
+        border: 1px solid #FFCE00;
+        h1  {
+          background-color: #b94152;
+          margin: 0;
+          padding: 0;
+          height: 2rem;
+          z-index: 10;
+          color: white;
+        }
+    }
+
+    .accordion  {
+      margin: 10%;
+    }
+
+    .blurb  {
+      margin: 0;
+      padding: 0;
+      height: 0;
+      opacity: 0;
+      overflow: hidden;
+      transition: all .8s ease .15s;
+      z-index: -10;
+    }
+
+    .shown {
+        opacity:1;
+        height: 155px;
+        padding: 8px;
+        transition: all .8s ease .15s;
+    }
+
+    .section h3:hover  {
+      background-color: #DD0000;
+    }
+
+    // .accordion {
+    // }
+    // .accordion h1, h2, h3, h4 {
+    //   cursor: pointer;
+    // }
+    // .accordion h1 {
+    //   padding: 15px 20px;
+    //   background-color: #000000;
+    //   font-family: serif;
+    //   font-size: 1.5rem;
+    //   font-weight: normal;
+    //   color: #FFCE00;
+    // }
+    // .accordion h1:hover {
+    //   color: #DD0000;
+    // }
+    // .accordion h1:first-child {
+    //   border-radius: 10px 10px 0 0;
+    // }
+    // .accordion h1:last-of-type {
+    //   border-radius: 0 0 10px 10px;
+    // }
+    // .accordion h1:not(:last-of-type) {
+    //   border-bottom: 1px dotted #FFCE00;
+    // }
+    // .accordion div, .accordion p {
+    //   display: none;
+    // }
+    // .accordion h2 {
+    //   padding: 5px 25px;
+    //   background-color: #FFCE00;
+    //   font-size: 1.1rem;
+    //   color: #000000;
+    // }
+    // .accordion h2:hover {
+    //   background-color: #FFCE00;
+    // }
+    // .accordion h3 {
+    //   padding: 5px 30px;
+    //   background-color: #b94152;
+    //   font-size: .9rem;
+    //   color: #ddd;
+    // }
+    // .accordion h3:hover {
+    //   background-color: #a93142;
+    // }
+    // .accordion p {
+    //   padding: 15px 35px;
+    //   background-color: #ddd;
+    //   font-family: serif;
+    //   font-size: .8rem;
+    //   color: #000000;
+    //   line-height: 1.3rem;
+    //   border-radius: 5px;
+    // }
 }
