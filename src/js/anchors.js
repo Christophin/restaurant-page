@@ -131,7 +131,41 @@ function desktopAnchors()   {
                             <div class='food'></div>
                             <div class='play'></div>
                         </div>
-                        <div class='reservationBox'></div>
+                        <div class='reservationBox'>
+                            <label class="label">Name</label>
+                            <p class="control">
+                              <input class="input" type="text" placeholder="Reservation Name">
+                            </p>
+                            <label class="label">Number of Guests</label>
+                            <p class="control">
+                              <input class="input" type="number" min="1" max="12" placeholder="Enter a number">
+                            </p>
+                            <label class="label">Date</label>
+                            <p class="control">
+                              <input class="input" type="date" placeholder="Text input">
+                            </p>
+                            <label class="label">Special Requests</label>
+                            <p class="control">
+                              <textarea class="textarea" placeholder="Please let us know how to make your experience unforgettable"></textarea>
+                            </p>
+                            <label class="label">Seating Preference</label>
+                            <p class="control">
+                              <span class="select">
+                                <select>
+                                    <option>Indoor</option>
+                                    <option>Patio</option>
+                                    <option>Bar</option>
+                                    <option>Rooftop</option>
+                                </select>
+                              </span>
+                            </p>
+                            <div class="control is-grouped">
+                              <p class="control">
+                                <button class="button is-primary">Reserve Table</button>
+                              </p>
+
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="column photos"></div>
