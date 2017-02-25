@@ -24,15 +24,30 @@
         width: 15%;
     }
 
-    .tabs {
-
-        h2 {
-            display: none;
-        }
-        h2:active {
-        display: inline-block;
-        }
+    .fillBox    {
+        background-color: lightgrey;
+        height: 400px;
+        width: 700px;
     }
+
+    .storyBox, .menuBox, .reservationBox    {
+        margin: 0;
+        padding: 0;
+        height: 0;
+        opacity: 0;
+        overflow: hidden;
+        transition: all .8s ease .15s;
+        z-index: -10;
+        color: white;
+    }
+
+    .tabShown    {
+        opacity: .8;
+        padding: 8px;
+        height: auto;
+        transition: all .8s ease .15s;
+    }
+
 }
 
 
@@ -63,10 +78,9 @@
         padding: 0;
         margin: 5%;
         border-radius: 15px;
-        opacity: 0.7;
-        background-color: transparent;
+        background-color: rgba(0,0,0,0.5);
         h1  {
-          background-color: #b94152;
+          background-color: rgba(185, 65, 82, 0.5);
           text-align: center;
           margin: 0;
           padding: 0;
@@ -76,11 +90,10 @@
           color: white;
         }
         h1:hover  {
-          background-color: #DD0000;
-          opacity: 1;
+          background-color: rgba(221, 0, 0, 0.5);
         }
-        img  {
-            opacity: none;
+        .photo  {
+            background-color: rgba(0,0,0,1);
         }
     }
 
@@ -88,7 +101,31 @@
       margin: 10%;
     }
 
-    .blurb  {
+    .section2    {
+        padding: 0;
+        margin: 2%;
+        border-radius: 15px;
+        h1  {
+          background-color: rgba(185, 65, 82, 0.5);
+          text-align: center;
+          margin: 0;
+          padding: 0;
+          height: 2rem;
+          border-radius: 15px;
+          z-index: 10;
+          color: white;
+        }
+        h1:hover  {
+          background-color: rgba(221, 0, 0, 0.5);
+        }
+        img  {
+            opacity: 1;
+            z-index: 10;
+        }
+
+    }
+
+    .blurb, .blurb2  {
       margin: 0;
       padding: 0;
       height: 0;
@@ -99,10 +136,10 @@
       color: white;
     }
 
-    .shown {
+    .shown, .shown2 {
         opacity: .8;
         padding: 8px;
         height: auto;
-        transition: all .8s ease .15s;;
+        transition: all .8s ease .15s;
     }
 }

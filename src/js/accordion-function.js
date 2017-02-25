@@ -6,4 +6,26 @@ function accordioning (event) {
     target.addClass('shown');
 }
 
-export {accordioning};
+function nestedAccordioning (event) {
+    $('.shown2').removeClass('shown2');
+    var target = $(event.currentTarget).children('.blurb2');
+    target.addClass('shown2');
+}
+
+function menuFill () {
+    $('.tabShown').removeClass('tabShown');
+    $('.menuBox').addClass('tabShown');
+}
+
+function storyFill ()   {
+    $('.tabShown').removeClass('tabShown');
+    $('.storyBox').addClass('tabShown');
+}
+
+function reservationFill () {
+    $('.tabShown').removeClass('tabShown');
+    $('.reservationBox').addClass('tabShown');
+
+}
+
+export {accordioning, nestedAccordioning, menuFill, storyFill, reservationFill};
