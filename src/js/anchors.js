@@ -45,16 +45,21 @@ function mobileAnchors() {
                 <div class="story blurb"></div>
             </div>
             <div class="section">
-                <h1>Beer</h1>
-                <div class='beers blurb'></div>
-            </div>
-            <div class="section">
-                <h1>Entrees</h1>
-                    <div class='food blurb'></div>
-            </div>
-            <div class="section">
-                <h1>Games</h1>
-                <div class='play blurb'></div>
+                <h1>Menu</h1>
+                <div class ='blurb'>
+                    <div class="section2">
+                        <h1>Beer</h1>
+                        <div class='beers blurb2'></div>
+                    </div>
+                    <div class="section2">
+                        <h1>Entrees</h1>
+                            <div class='food blurb2'></div>
+                    </div>
+                    <div class="section2">
+                        <h1>Games</h1>
+                        <div class='play blurb2'></div>
+                    </div>
+                </div>
             </div>
             <div class="section">
                 <h1>Reservations</h1>
