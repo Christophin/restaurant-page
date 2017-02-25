@@ -161,22 +161,22 @@ function desktopAnchors()   {
                             </ol>
                 </div>
                 <div class="specials column">
-                <h1>Today's Special</h1>
+                <h1 class='specialHeader'>Today's Special</h1>
                 </div>
                 <div class="location column">
-                    <div class='locationHeader'>Our Location</div>
-                    <div class='mapBox'>
-                        <div id="map"></div>
-                    <div class='locationAddress'>
-                        115 M.L.K. Jr Dr SW #400, Atlanta, GA 30303
-                    </div>
-                    <div class='locationMap'>
-                        555-555-5555 • 555-555-5555 •
-                        <a href='https://www.google.com/maps/place/The+Iron+Yard+-+Atlanta/@33.7518581,-84.3913382,15z/data=!4m5!3m4!1s0x0:0xab2ff0008509bc09!8m2!3d33.7518581!4d-84.3913382'>Map</a>
-                        •
-                        <a href='https://www.google.com/maps/dir//The+Iron+Yard+-+Atlanta,+115+M.L.K.+Jr+Dr+SW+%23400,+Atlanta,+GA+30303/@33.7518581,-84.3913382,15z/data=!4m15!1m6!3m5!1s0x0:0xab2ff0008509bc09!2sThe+Iron+Yard+-+Atlanta!8m2!3d33.7518581!4d-84.3913382!4m7!1m0!1m5!1m1!1s0x88f50383f3ab72e5:0xab2ff0008509bc09!2m2!1d-84.3913382!2d33.7518581'> Directions
-                        </a>
-                    </div>
+                    <h1 class='locationHeader'>Our Location</h1>
+                        <div class='mapBox'>
+                            <div id="map"></div>
+                        <div class='locationAddress'>
+                            115 M.L.K. Jr Dr SW #400, Atlanta, GA 30303
+                        </div>
+                        <div class='locationMap'>
+                            555-555-5555 • 555-555-5555 •
+                            <a href='https://www.google.com/maps/place/The+Iron+Yard+-+Atlanta/@33.7518581,-84.3913382,15z/data=!4m5!3m4!1s0x0:0xab2ff0008509bc09!8m2!3d33.7518581!4d-84.3913382'>Map</a>
+                            •
+                            <a href='https://www.google.com/maps/dir//The+Iron+Yard+-+Atlanta,+115+M.L.K.+Jr+Dr+SW+%23400,+Atlanta,+GA+30303/@33.7518581,-84.3913382,15z/data=!4m15!1m6!3m5!1s0x0:0xab2ff0008509bc09!2sThe+Iron+Yard+-+Atlanta!8m2!3d33.7518581!4d-84.3913382!4m7!1m0!1m5!1m1!1s0x88f50383f3ab72e5:0xab2ff0008509bc09!2m2!1d-84.3913382!2d33.7518581'> Directions
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
