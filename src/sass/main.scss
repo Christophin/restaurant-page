@@ -103,6 +103,7 @@
 
 .entree-price:before, .beer-price:before, .game-price:before {
       text-overflow: ellipsis;
+      content: "................................................................";
       height: 19px;
   // right: 100%;
 }
