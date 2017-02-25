@@ -230,11 +230,11 @@ function processFlickr(data)    {
 
 function specialsFlickr(data)   {
     var special = data.photos.photo[5];
-    $('.specials').prepend(`
+    $('.specialHeader').append(`
         <div class="photo photo${special.id}">
             <img src="https://farm${special.farm}.staticflickr.com/${special.server}/${special.id}_${special.secret}.jpg"
         </div>
     `);
 }
 
-export { mobileMenu, mobileNews, mobileSpecial, specialGenerator, desktopMenu, processFlickr, specialsFlickr };
+export { mobileMenu, /*mobileNews,*/ mobileSpecial, specialGenerator, desktopMenu, processFlickr, specialsFlickr };

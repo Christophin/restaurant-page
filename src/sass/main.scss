@@ -5,10 +5,11 @@
      -moz-box-sizing: border-box;
           box-sizing: border-box;
         //  font-family: 'UnifrakturMaguntia', cursive;
+        img { border-radius: 5px; }
 }
 
 .mapBox    {
-    width: 250px;
+    width: 300px;
     height: 250px;
 }
 
@@ -152,8 +153,62 @@
         margin-top: -21px;
     }
 
+    .content1 {
+        height: 500px;
+
+        h1 {
+            font-size: 2em;
+            padding-bottom: 2%;
+        }
+    }
+
+    .news, .specials, .location {
+        color: white;
+        margin: 2%;
+        padding: 0;
+        border-radius: 5px;
+        box-shadow: 5px 5px 20px black;
+        background: rgba(211,211,211,.6);
+    }
+
+    .news {
+        text-align: left;
+        overflow: scroll;
+
+        h1 {
+            text-align: center;
+        }
+
+        p{
+            margin: 0 0% 0 5%;
+        }
+
+        li{
+            margin: 0 2% 0 10%;
+        }
+    }
+
+    .newsImg {
+        margin: 2%;
+    }
+
+    .specials {
+
+        .photo {
+            margin: 2%;
+        }
+
+    }
+
+    .location {
+
+    }
 
 }
+
+
+
+
 
 
 //*THIS CODE IS FOR MOBILE*

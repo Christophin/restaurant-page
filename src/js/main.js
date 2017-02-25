@@ -1,6 +1,6 @@
 import $ from 'jquery';
 import {searchFlickr} from './flickr-api';
-import { grabMenu, grabSpecial, grabNews } from './tiy-api';
+import { grabMenu, grabSpecial, /*grabNews*/ } from './tiy-api';
 import {mobileAnchors, desktopAnchors} from './anchors.js';
 import { mobileMenu, mobileNews, mobileSpecial, desktopMenu, processFlickr, specialsFlickr } from './templates';
 import {buildMap} from './googleMaps.js';
@@ -36,7 +36,7 @@ var menuGrabber = function() {
     });
 };
 grabSpecial().then(mobileSpecial);
-grabNews().then(mobileNews);
+//grabNews().then(mobileNews);
 buildMap();
 menuGrabber();
 
