@@ -26,12 +26,11 @@
 
     .tabs {
 
-            h2 {
-                display: none;
-            }
-
-            h2:active {
-            display: inline-block;
+        h2 {
+            display: none;
+        }
+        h2:active {
+        display: inline-block;
         }
     }
 }
@@ -39,6 +38,14 @@
 
 //*THIS CODE IS FOR MOBILE*
 @media (max-width:650px) {
+    body    {
+        background-image: url(https://farm8.staticflickr.com/7309/13488563063_9cab01ca1c_h.jpg);
+        background-size: 1600px 1067px;
+        background-position: -255px -259px;
+        padding-bottom: 100px;
+        background-attachment:fixed;
+    }
+
     .logo {
         margin: 0 auto;
         width: 50%;
@@ -53,13 +60,27 @@
     //Styling for the accordion
     .section  {
         border: 1px solid #FFCE00;
+        padding: 0;
+        margin: 5%;
+        border-radius: 15px;
+        opacity: 0.7;
+        background-color: transparent;
         h1  {
           background-color: #b94152;
+          text-align: center;
           margin: 0;
           padding: 0;
           height: 2rem;
+          border-radius: 15px;
           z-index: 10;
           color: white;
+        }
+        h1:hover  {
+          background-color: #DD0000;
+          opacity: 1;
+        }
+        img  {
+            opacity: none;
         }
     }
 
@@ -75,17 +96,14 @@
       overflow: hidden;
       transition: all .8s ease .15s;
       z-index: -10;
+      color: white;
     }
 
     .shown {
-        opacity:1;
-        height: 155px;
+        opacity: .8;
         padding: 8px;
-        transition: all .8s ease .15s;
-    }
-
-    .section h3:hover  {
-      background-color: #DD0000;
+        height: auto;
+        transition: all .8s ease .15s;;
     }
 
     // .accordion {
