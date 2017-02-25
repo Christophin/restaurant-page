@@ -233,6 +233,9 @@ function processFlickr(data)    {
             </div>
         `);
     }
+}
+
+function specialsFlickr(data)   {
     var special = data.photos.photo[5];
     $('.specials').prepend(`
         <div class="photo photo${special.id}">
@@ -241,4 +244,4 @@ function processFlickr(data)    {
     `);
 }
 
-export { mobileMenu, mobileNews, mobileSpecial, specialGenerator, desktopMenu, processFlickr };
+export { mobileMenu, mobileNews, mobileSpecial, specialGenerator, desktopMenu, processFlickr, specialsFlickr };

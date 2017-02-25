@@ -3,7 +3,7 @@ import {FL_KEY} from './tokens';
 
 
 // this search flickr to grab picture ids that have a tag we specify, (right now 'german beer'
-function searchFlickr ()  {
+function searchFlickr (query)  {
     return $.ajax({
         url: 'https://api.flickr.com/services/rest/',
         data: {
@@ -11,7 +11,7 @@ function searchFlickr ()  {
             api_key: `${FL_KEY}`,
             format: 'json',
             nojsoncallback: 1,
-            tags: 'charcuterie',
+            tags: query,
         },
     });
 }
