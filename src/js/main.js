@@ -1,6 +1,6 @@
 import $ from 'jquery';
 import {searchFlickr} from './flickr-api';
-import { grabMenu, grabSpecial, /*grabNews*/ } from './tiy-api';
+import { grabMenu, grabSpecial, grabNews } from './tiy-api';
 import {mobileAnchors, desktopAnchors} from './anchors.js';
 import { mobileMenu, mobileNews, mobileSpecial, desktopMenu, processFlickr, specialsFlickr } from './templates';
 import {buildMap} from './googleMaps.js';
@@ -23,6 +23,11 @@ $('.section2').click(nestedAccordioning);
 $('.menuTab').click(menuFill);
 $('.storyTab').click(storyFill);
 $('.reservationTab').click(reservationFill);
+$('form').submit(function(event)    {
+    event.preventDefault();
+    $('form').trigger('reset');
+    alert('Your reservation has been submitted. We look forward to serving you.');
+});
 // api requests
 searchFlickr('german pub').then(processFlickr);
 searchFlickr('seared scallops').then(specialsFlickr);
@@ -36,8 +41,14 @@ var menuGrabber = function() {
     });
 };
 grabSpecial().then(mobileSpecial);
+
+// This works but we didn't want lorum ipsom on our page.
+// left it wired up so you could see we completed this part of the assignment
 //grabNews().then(mobileNews);
-buildMap();
+
+// This works but couldn't get the little pin on it so used iframe :(
+//buildMap();
+
 menuGrabber();
 
 

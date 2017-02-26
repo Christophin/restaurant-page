@@ -391,4 +391,4 @@ function specialsFlickr(data)   {
     `);
 }
 
-export { mobileMenu, /*mobileNews,*/ mobileSpecial, specialGenerator, desktopMenu, processFlickr, specialsFlickr };
+export { mobileMenu, mobileNews, mobileSpecial, specialGenerator, desktopMenu, processFlickr, specialsFlickr };
