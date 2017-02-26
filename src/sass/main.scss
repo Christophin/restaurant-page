@@ -5,7 +5,9 @@
      -moz-box-sizing: border-box;
           box-sizing: border-box;
         //  font-family: 'UnifrakturMaguntia', cursive;
-        img { border-radius: 5px; }
+        img    {
+            border-radius: 5px;
+        }
 }
 
 .mapBox    {
@@ -62,9 +64,11 @@
         background-color: lightgrey;
         padding: 5px;
         border-radius: 30px;
-        opacity: 0.8;
+        background: rgba(211,211,211,.3);
+        z-index: 10;
         margin-left: 835px;
         position: fixed;
+        box-shadow: 5px 5px 20px black;
     }
 
     .fa-twitter-square    {
@@ -119,9 +123,18 @@
             color: white;
             text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
         }
+
+        .storyTab:hover, .menuTab:hover, .reservationTab:hover    {
+            color: grey;
+        }
     }
     .menuTitle    {
         font-size: 3em;
+    }
+
+    .storyBox    {
+        font-size: 1.5em;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     }
 
     .menuBox   {
@@ -134,6 +147,7 @@
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
+        margin-top: 20px;
     }
 
     .beer-price, .entree-price, .game-price    {
@@ -143,18 +157,38 @@
         font-size: 1.5em;
     }
 
-    .beer-style    {
+    .beer-style,    {
         text-align: left;
+        font-size: 1.2em;
     }
 
     .beer-abv    {
         float: right;
         position: relative;
         margin-top: -21px;
+        font-size: 1.2em;
+    }
+
+    .beer-desc, .entree-desc, .game-desc    {
+        text-align: left;
+        padding-right: 160px;
+        font-size: 1.2em;
+    }
+
+    .beer-attr, .entree-attr, .game-attr    {
+        margin-top: -40px;
+        margin-bottom: 60px;
+        position: relative;
+        div    {
+            display: inline-block;
+            float: right;
+            margin: 0px 10px 0px 10px;
+            
+        }
     }
 
     .content1 {
-        height: 500px;
+        height: 410px;
 
         h1 {
             font-size: 2em;
@@ -168,12 +202,17 @@
         padding: 0;
         border-radius: 5px;
         box-shadow: 5px 5px 20px black;
-        background: rgba(211,211,211,.6);
+        background: rgba(211,211,211,.1);
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        height: 360px;
     }
 
-    .news {
+    .smashBox {
         text-align: left;
         overflow: scroll;
+        font-size: 1.3em;
+        overflow-y: scroll;
+        height: 310px;
 
         h1 {
             text-align: center;
@@ -200,8 +239,17 @@
 
     }
 
-    .location {
+    .locationMap {
+        font-size: .8em;
+    }
 
+    .photos    {
+        .photo    {
+            margin: 20px;
+            img    {
+                box-shadow: 5px 5px 20px 0px black;
+            }
+        }
     }
 
 }
