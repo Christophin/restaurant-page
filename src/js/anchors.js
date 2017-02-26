@@ -37,13 +37,13 @@ function mobileAnchors() {
                         For all of you newbs, here are the rules:
                     </p>
                     <ol>
-                        <li>If you are killed by another player, drink once.</li>
-                        <li>If you are knocked into the foreground/background by another player, drink twice.</li>
-                        <li>If you are killed by a CPU, drink twice the amount you would drink for a player kill.</li>
-                        <li>If you suicide, take a shot.</li>
-                        <li>If the stage kills you, take a shot.</li>
-                        <li>If you are killed by a player who is over 200%, take TWO shots.</li>
-                        <li>If you finish your drink before the round ends, you don't have to drink anymore for that round (keep count of what you missed), but must still take shots.</li>
+                        <li>1. If you are killed by another player, drink once.</li>
+                        <li>2. If you are knocked into the foreground/background by another player, drink twice.</li>
+                        <li>3. If you are killed by a CPU, drink twice the amount you would drink for a player kill.</li>
+                        <li>4. If you suicide, take a shot.</li>
+                        <li>5. If the stage kills you, take a shot.</li>
+                        <li>6. If you are killed by a player who is over 200%, take TWO shots.</li>
+                        <li>7. If you finish your drink before the round ends, you don't have to drink anymore for that round (keep count of what you missed), but must still take shots.</li>
                     </ol>
                 </div>
             </div>
