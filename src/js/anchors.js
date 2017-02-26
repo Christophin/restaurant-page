@@ -61,7 +61,9 @@ function mobileAnchors() {
                 <h1 class="location">Location</h1>
                 <div class="blurb">
                     <div class="mapBox">
-                        <div id="map"></div>
+                        <div id="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3317.340805936194!2d-84.393532248631!3d33.75185808059409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f50383f3ab72e5%3A0xab2ff0008509bc09!2sThe+Iron+Yard+-+Atlanta!5e0!3m2!1sen!2sus!4v1487883071532" width="100%" height="auto" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -140,10 +142,7 @@ function desktopAnchors()   {
                                     Guten tag! As you may have heard our “Super Smashed Bros.” tournament is coming up.
                                 </p>
                                 <p>
-                                    Entry - $5
-                                </p>
-                                <p>
-                                    Entry (playing Sheik) -$15
+                                    Entry - $5 (playing Sheik -$15)
                                 </p>
                                 <p class='latestNews'>
                                     For all of you newbs, here are the rules:
@@ -165,7 +164,9 @@ function desktopAnchors()   {
                 <div class="location column">
                     <h1 class='locationHeader'>Our Location</h1>
                         <div class='mapBox'>
-                            <div id="map"></div>
+                            <div id="map">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3317.340805936194!2d-84.393532248631!3d33.75185808059409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f50383f3ab72e5%3A0xab2ff0008509bc09!2sThe+Iron+Yard+-+Atlanta!5e0!3m2!1sen!2sus!4v1487883071532" width="100%" height="225" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            </div>
                         <div class='locationAddress'>
                             115 M.L.K. Jr Dr SW #400, Atlanta, GA 30303
                         </div>
@@ -254,7 +255,7 @@ function desktopAnchors()   {
     `;
 }
 
-// <div class='newsImg'>
+// <div class='storyImg'>
 //     <img src='./images/smashed-bros.jpg'>
 // </div>
 
