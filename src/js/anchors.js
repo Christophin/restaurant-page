@@ -242,7 +242,7 @@ function desktopAnchors()   {
                             <p>
                                 “Prost!”, as we are affectionately known, was started as an homage to a German
                                 “bierhaus” you might find in towns and villages across the country. Our founder,
-                                Butt Britler (pictured)
+                                Butt Britler,
                             </p>
                             <div class='storyImg'>
                                 <img src='./images/smashed-bros.jpg'>
