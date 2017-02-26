@@ -17,14 +17,14 @@ function grabSpecial () {
 }
 
 
-// grabs our news data
+//grabs our news data
 //*THIS API CALL WORKS, BUT WANTED TO ADD OUR OWN SPECIAL NEWS*
-// function grabNews () {
-//     return $.ajax({
-//         url: 'https://json-data.herokuapp.com/restaurant/news/1',
-//         dataType: 'json',
-//     });
-// }
+function grabNews () {
+    return $.ajax({
+        url: 'https://json-data.herokuapp.com/restaurant/news/1',
+        dataType: 'json',
+    });
+}
 
 //uses the specials api menu id to grab the correct menu item.
 function specialBuilder (menuId) {
@@ -39,4 +39,4 @@ function specialBuilder (menuId) {
     });
 }
 
-export  { grabMenu, grabSpecial, /*grabNews*/ specialBuilder };
+export  { grabMenu, grabSpecial, grabNews, specialBuilder };
