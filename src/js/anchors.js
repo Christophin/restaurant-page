@@ -135,6 +135,7 @@ function mobileAnchors() {
                           <p class="control">
                             <button class="button is-primary">Reserve Table</button>
                           </p>
+                        </div>
                     </form>
                 </div>
             </div>
