@@ -113,7 +113,7 @@ function desktopAnchors()   {
     return `
         <div class="level header">
             <div class="logo level-right">
-                <img src='./images/prost_logo.png'/>
+                <img src='./images/prost_bierhaus.png'/>
             </div>
             <div class="social-icons level-right">
                 <div class="twitter">
