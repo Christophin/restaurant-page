@@ -3,22 +3,22 @@ function mobileAnchors() {
     return `
         <div class="header">
             <div class="logo">
-            <img src='./images/prost_logo.png'/>
+                <img src='./images/prost_bierhaus.png'/>
             </div>
             <div class="social-icons level">
                 <div class="twitter">
                     <a href='https://twitter.com/prostbierhaus'>
-                        <i class="fa fa-twitter-square is-half is-offset-one-quarter" aria-hidden="true"></i>
+                        <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i>
                     </a>
                 </div>
                 <div class="facebook">
                     <a href="https://www.facebook.com/prost.bierhaus.5">
-                        <i class="fa fa-facebook-official is-half is-offset-one-quarter" aria-hidden="true"></i>
+                        <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
                     </a>
                 </div>
                 <div class="instagram">
                     <a href='https://www.instagram.com/prost_bierhaus/'>
-                        <i class="fa fa-instagram is-half is-offset-one-quarter" aria-hidden="true"></i>
+                        <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
                     </a>
                 </div>
             </div>
