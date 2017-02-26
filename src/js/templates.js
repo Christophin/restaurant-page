@@ -127,10 +127,10 @@ function desktopMenu (data){
                         ${beer.description}
                     </div>
                     <div class='beer-attr'>
-                        <div class='beerAllergy'><img src='./images/allergy-warning.png' class='icon'></div>
-                        <div class='beerFavorites'><img src='./images/favorites.png' class='icon'></div>
-                        <div class='bottle'><img src='./images/spicy.png' class='icon'></div>
-                        <div class='draught'><img src='./images/vegan.png' class='icon'></div>
+                        <div class='draught'><i class="fa fa-tint fa-lg" aria-hidden="true"></i></div>
+                        <div class='bottle'><i class="fa fa-beer fa-lg" aria-hidden="true"></i></div>
+                        <div class='beerFavorites'><i class="fa fa-gratipay fa-lg" aria-hidden="true"></i></div>
+                        <div class='beerAllergy'><i class="fa fa-exclamation-triangle fa-lg" aria-hidden="true"></i></div>
                     </div>
                 </div>
         `);
@@ -150,10 +150,10 @@ function desktopMenu (data){
                             ${entrees.description}
                         </div>
                         <div class='entree-attr'>
-                            <div class='allergy'><img src='./images/allergy-warning.png' class='icon'></div>
-                            <div class='favorites'><img src='./images/favorites.png' class='icon'></div>
-                            <div class='spicy'><img src='./images/spicy.png' class='icon'></div>
-                            <div class='vegan'><img src='./images/vegan.png' class='icon'></div>
+                            <div class='vegan'><i class="fa fa-leaf fa-lg" aria-hidden="true"></i></div>
+                            <div class='spicy'><i class="fa fa-free-code-camp fa-lg" aria-hidden="true"></i></div>
+                            <div class='favorites'><i class="fa fa-gratipay fa-lg" aria-hidden="true"></i></div>
+                            <div class='allergy'><i class="fa fa-exclamation-triangle fa-lg" aria-hidden="true"></i></div>
                         </div>
                     </div>
         `);
@@ -172,14 +172,20 @@ function desktopMenu (data){
                         ${games.description}
                     </div>
                     <div class='game-attr'>
-                        <div class='online'><img src='./images/allergy-warning.png' class='icon'></div>
-                        <div class='multiplayer'><img src='./images/favorites.png' class='icon'></div>
-                        <div class='rating'><img src='./images/spicy.png' class='icon'></div>
-                        <div class='favorite'><img src='./images/vegan.png' class='icon'></div>
+                        <div class='online'><i class="fa fa-internet-explorer fa-lg" aria-hidden="true"></i></div>
+                        <div class='multiplayer'><i class="fa fa-random fa-lg" aria-hidden="true"></i></div>
+                        <div class='rating'><i class="fa fa-gamepad fa-lg" aria-hidden="true"></i></div>
+                        <div class='favorite'><i class="fa fa-gratipay fa-lg" aria-hidden="true"></i></div>
                     </div>
                 </div>
         `);
     });
+}
+
+function favoriteGeneration (value)  {
+    if (value === 1)    {
+        
+    }
 }
 
 //pulls NEWS information from NEWS api
