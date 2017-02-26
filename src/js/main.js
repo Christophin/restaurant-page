@@ -41,10 +41,14 @@ var menuGrabber = function() {
     });
 };
 grabSpecial().then(mobileSpecial);
+
 // This works but we didn't want lorum ipsom on our page.
+// left it wired up so you could see we completed this part of the assignment
 //grabNews().then(mobileNews);
+
 // This works but couldn't get the little pin on it so used iframe :(
 //buildMap();
+
 menuGrabber();
 
 
