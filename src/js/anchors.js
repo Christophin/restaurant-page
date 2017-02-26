@@ -135,27 +135,29 @@ function desktopAnchors()   {
             <div class="columns content1">
                 <div class="news column is-one-third">
                         <h1>Latest News</h1>
-                            <p>
-                                Guten tag! As you may have heard our “Super Smash-ed Bros.” tournament is coming up.
-                            </p>
-                            <p>
-                                Entry - $5
-                            </p>
-                            <p>
-                                Entry (w. Sheik) -$15
-                            </p>
-                            <p class='latestNews'>
-                                For all of you newbs, here are the rules:
-                            </p>
-                            <ul>
-                                <li>1. If you are killed by another player, drink once.</li>
-                                <li>2. If you are knocked into the foreground/background by another player, drink twice.</li>
-                                <li>3. If you are killed by a CPU, drink twice the amount you would drink for a player kill.</li>
-                                <li>4. If you suicide, take a shot.</li>
-                                <li>5. If the stage kills you, take a shot.</li>
-                                <li>6. If you are killed by a player who is over 200%, take TWO shots.</li>
-                                <li>7. If you finish your drink before the round ends, you don't have to drink anymore for that round (keep count of what you missed), but must still take shots.</li>
-                            </ul>
+                            <div class="smashBox">
+                                <p>
+                                    Guten tag! As you may have heard our “Super Smashed Bros.” tournament is coming up.
+                                </p>
+                                <p>
+                                    Entry - $5
+                                </p>
+                                <p>
+                                    Entry (playing Sheik) -$15
+                                </p>
+                                <p class='latestNews'>
+                                    For all of you newbs, here are the rules:
+                                </p>
+                                <ul>
+                                    <li>1. If you are killed by another player, drink once.</li>
+                                    <li>2. If you are knocked into the foreground/background by another player, drink twice.</li>
+                                    <li>3. If you are killed by a CPU, drink twice the amount you would drink for a player kill.</li>
+                                    <li>4. If you suicide, take a shot.</li>
+                                    <li>5. If the stage kills you, take a shot.</li>
+                                    <li>6. If you are killed by a player who is over 200%, take TWO shots.</li>
+                                    <li>7. If you finish your drink before the round ends, you don't have to drink anymore for that round (keep count of what you missed), but must still take shots.</li>
+                                </ul>
+                            </div>
                 </div>
                 <div class="specials column">
                 <h1 class='specialHeader'>Today's Special</h1>

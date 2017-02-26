@@ -108,7 +108,7 @@ function desktopMenu (data){
 
     //pulls BEER information from MENU api
     data.Beer.forEach(function(beer){
-        // I'm so sorry for the commas
+        // Oh god I hate this solution to the dots from item to price
         $('.beers').append(`
                 <div class='beer'>
                     <div class='beer-name is-left'>
@@ -126,7 +126,7 @@ function desktopMenu (data){
                     <div class='beer-desc'>
                         ${beer.description}
                     </div>
-                    <div class='beerAttr'>
+                    <div class='beer-attr'>
                         <div class='beerAllergy'><img src='./images/allergy-warning.png' class='icon'></div>
                         <div class='beerFavorites'><img src='./images/favorites.png' class='icon'></div>
                         <div class='bottle'><img src='./images/spicy.png' class='icon'></div>
@@ -204,7 +204,7 @@ function specialGenerator(item) {
     $('.specials').append(`
         <div class="special">
             <div class='special-name'>${item.item}</div>
-            <div class='special-price'>${item.price}</div>
+            <div class='special-price'>$${item.price}</div>
             <div class='special.desc'>${item.description}</div>
         </div>
     `);
