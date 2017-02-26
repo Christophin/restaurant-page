@@ -179,11 +179,33 @@
         margin-top: -40px;
         margin-bottom: 60px;
         position: relative;
+        background: rgba(211,211,211,.3);
+        .red    {
+            color: red;
+        }
+        .yellow    {
+            color: yellow;
+        }
+        .blue    {
+            color: blue;
+        }
+        .gold    {
+            color: gold;
+        }
+        .green    {
+            color: green;
+        }
         div    {
             display: inline-block;
             float: right;
             margin: 0px 10px 0px 10px;
-            
+
+        }
+        .hover[title]:hover:after    {
+             content: attr(title);
+             position: absolute;
+             z-index: -10;
+             display: none;
         }
     }
 
