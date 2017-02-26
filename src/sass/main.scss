@@ -5,7 +5,9 @@
      -moz-box-sizing: border-box;
           box-sizing: border-box;
         //  font-family: 'UnifrakturMaguntia', cursive;
-        img { border-radius: 5px; }
+        img    {
+            border-radius: 5px;
+        }
 }
 
 .mapBox    {
@@ -62,9 +64,11 @@
         background-color: lightgrey;
         padding: 5px;
         border-radius: 30px;
-        opacity: 0.8;
+        background: rgba(211,211,211,.3);
+        z-index: 10;
         margin-left: 835px;
         position: fixed;
+        box-shadow: 5px 5px 20px black;
     }
 
     .fa-twitter-square    {
@@ -119,6 +123,10 @@
             color: white;
             text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
         }
+
+        .storyTab:hover, .menuTab:hover, .reservationTab:hover    {
+            color: grey;
+        }
     }
     .menuTitle    {
         font-size: 3em;
@@ -168,12 +176,15 @@
         padding: 0;
         border-radius: 5px;
         box-shadow: 5px 5px 20px black;
-        background: rgba(211,211,211,.6);
+        background: rgba(211,211,211,.3);
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        height: 360px;
     }
 
     .news {
         text-align: left;
         overflow: scroll;
+        font-size: 1.2em;
 
         h1 {
             text-align: center;
@@ -200,8 +211,17 @@
 
     }
 
-    .location {
+    .locationMap {
+        font-size: .8em;
+    }
 
+    .photos    {
+        .photo    {
+            margin: 20px;
+            img    {
+                box-shadow: 5px 5px 20px 0px black;
+            }
+        }
     }
 
 }
