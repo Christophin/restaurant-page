@@ -321,18 +321,56 @@
         background-position: -255px -259px;
         padding-bottom: 100px;
         background-attachment:fixed;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
+
+    .header {
+        padding: 1%;
     }
 
     .logo {
-        margin: 0 auto;
-        width: 50%;
+        height: 30%;
+        width: 30%;
+        border-radius: 80px;
+        background: rgba(255, 250, 205, 0.75);
+        padding: 3%;
+        margin: 0 36%;
+        box-shadow: 5px 5px 20px black;
     }
 
-    .social-icons {
-        display: inline-flex;
-        width: 50%;
-        margin: 0 auto;
-    }
+        .twitter    {
+            margin: 10% 5%;
+        }
+
+        .facebook    {
+            margin: 10% 5%;
+        }
+
+        .instagram    {
+            margin: 10% 5%;
+        }
+
+        .social-icons    {
+            float: right;
+            background-color: lightgrey;
+            padding: 5px;
+            border-radius: 30px;
+            background: rgba(255, 250, 205, 0.75);
+            z-index: 10;
+            box-shadow: 5px 5px 20px black;
+        }
+
+        .fa-twitter-square    {
+            color: black;
+        }
+
+        .fa-facebook-official    {
+            color: #DD0000;
+        }
+
+        .fa-instagram    {
+            color: #FFCE00;
+        }
 
     //Styling for the accordion
     .section  {
@@ -345,11 +383,12 @@
           background: rgba(211,211,211,.3);
           text-align: center;
           margin: 0;
-          padding: 0;
-          height: 2rem;
+          padding: 1%;
+          height: 3rem;
           border-radius: 15px;
           z-index: 10;
           color: white;
+          font-size: 1.5rem;
         }
         h1:hover  {
           background-color: rgba(221, 0, 0, 0.5);
@@ -368,6 +407,7 @@
         margin: 2%;
         border-radius: 15px;
         box-shadow: 5px 5px 20px black;
+        background: rgba(211,211,211,.1);
         h1  {
           background-color: rgba(185, 65, 82, 0.5);
           text-align: center;
@@ -392,17 +432,43 @@
       margin: 0;
       padding: 0;
       height: 0;
-      opacity: 0;
+    //   opacity: 0;
       overflow: hidden;
       transition: all .8s ease .15s;
       z-index: -10;
       color: white;
+      font-size: 1.2rem;
+      background: rgba(211, 211, 211, 0.1);
     }
 
     .shown, .shown2 {
-        opacity: .8;
+        background: rgba(211, 211, 211, 0.1);
         padding: 8px;
         height: auto;
         transition: all .8s ease .15s;
     }
+
+    .photos    {
+        .photo    {
+            margin: 20px;
+            img    {
+                box-shadow: 5px 5px 20px 0px black;
+            }
+        }
+    }
+
+    .label {
+        color: white;
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
+
+    .beer-name, .entree-name, .game-name {
+        font-size: 1.75rem;
+    }
+
+    .beer-price, .entree-price, .game-price {
+        font-size: 1.35rem;
+    }
+
+
 }
