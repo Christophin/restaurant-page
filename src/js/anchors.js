@@ -240,7 +240,18 @@ function desktopAnchors()   {
                             <p>Guten tag! Welcome to the Prost! Bierhaus.
                             </p>
                             <p>
-                                “Prost!”, as we are affectionately known, was started as an homage to a German “bierhaus” you might find in towns and villages across the country. Our founder wanted to take the essence of those alehouses his father and uncles frequented, and add a bit of his passion — video games. At this establishment you’ll get a bit of the old country infused with the games of tomorrow. So get your steins and grab you controllers and we’ll see you soon.
+                                “Prost!”, as we are affectionately known, was started as an homage to a German
+                                “bierhaus” you might find in towns and villages across the country. Our founder,
+                                Butt Britler (pictured)
+                            </p>
+                            <div class='storyImg'>
+                                <img src='./images/smashed-bros.jpg'>
+                            </div>
+                            <p>
+                                wanted to take the essence of those alehouses his father and uncles frequented,
+                                and add a bit of his passion — video games. At this establishment you’ll get a
+                                bit of the old country infused with the games of tomorrow. So get your steins and
+                                grab you controllers and we’ll see you soon.
                             </p>
                         </div>
                         <div class='menuBox'>
