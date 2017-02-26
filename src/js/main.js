@@ -23,6 +23,11 @@ $('.section2').click(nestedAccordioning);
 $('.menuTab').click(menuFill);
 $('.storyTab').click(storyFill);
 $('.reservationTab').click(reservationFill);
+$('form').submit(function(event)    {
+    event.preventDefault();
+    $('form').trigger('reset');
+    alert('Your reservation has been submitted. We look forward to serving you.');
+});
 // api requests
 searchFlickr('german pub').then(processFlickr);
 searchFlickr('seared scallops').then(specialsFlickr);
