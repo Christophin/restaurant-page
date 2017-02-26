@@ -182,10 +182,10 @@ function desktopAnchors()   {
             </div>
             <div class="columns content2">
                 <div class="column tabsBox is-two-thirds">
-                    <div class="tabs">
+                    <div class="tabs is-large">
                         <ul>
-                            <li class="storyTab">
-                                <a>Our Story</a>
+                            <li>
+                                <a class="storyTab">Our Story</a>
                             </li>
                             <li>
                                 <a class='menuTab'>Menu</a>
@@ -204,8 +204,11 @@ function desktopAnchors()   {
                             </p>
                         </div>
                         <div class='menuBox'>
+                            <div class='menuTitle'>Beer:</div>
                             <div class='beers'></div>
+                            <div class='menuTitle'>Entrees:</div>
                             <div class='food'></div>
+                            <div class='menuTitle'>Games:</div>
                             <div class='play'></div>
                         </div>
                         <div class='reservationBox'>

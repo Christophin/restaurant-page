@@ -27,6 +27,7 @@
         background-attachment: fixed;
         background-size: 1450px 1000px;
         background-position: 1px -60px;
+        color: white;
     };
 
     .container    {
@@ -62,7 +63,8 @@
         padding: 5px;
         border-radius: 30px;
         opacity: 0.8;
-        margin-right: 30px;
+        margin-left: 835px;
+        position: fixed;
     }
 
     .fa-twitter-square    {
@@ -83,10 +85,12 @@
         background-position: -174px -174px;
         padding-bottom: 400px;
         width: 1026px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 20px black;
     }
 
     .fillBox    {
-        background-color: lightgrey;
+        background-color: none;
         height: auto;
         width: 600px;
         overflow: scroll;
@@ -108,6 +112,45 @@
         padding: 8px;
         height: auto;
         transition: all .8s ease .15s;
+    }
+
+    .tabs    {
+        .storyTab, .menuTab, .reservationTab    {
+            color: white;
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        }
+    }
+    .menuTitle    {
+        font-size: 3em;
+    }
+
+    .menuBox   {
+        text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
+
+    .beer-name, .entree-name, .game-name    {
+        text-align: left;
+        font-size: 1.75em;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    .beer-price, .entree-price, .game-price    {
+        float: right;
+        position: relative;
+        margin-top: -37px;
+        font-size: 1.5em;
+    }
+
+    .beer-style    {
+        text-align: left;
+    }
+
+    .beer-abv    {
+        float: right;
+        position: relative;
+        margin-top: -21px;
     }
 
     .content1 {
@@ -159,15 +202,6 @@
 
     .location {
 
-    }
-
-
-
-    .entree-price:before, .beer-price:before, .game-price:before {
-          //text-overflow: ellipsis;
-          content: "................................................................";
-          height: 19px;
-      // right: 100%;
     }
 
 }
