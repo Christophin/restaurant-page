@@ -31,14 +31,8 @@ function mobileAnchors() {
                         Guten tag! As you may have heard our “Super Smash-ed Bros.” tournament is coming up.
                     </p>
                     <p>
-                        Entry - $5
+                        Entry - $5 (w/ Sheik $15)
                     </p>
-                    <p>
-                        Entry (w. Sheik) -$15
-                    </p>
-                    <div class='newsImg'>
-                        <img src='./images/smashed-bros.jpg'>
-                    </div>
                     <p class='latestNews'>
                         For all of you newbs, here are the rules:
                     </p>
@@ -55,14 +49,25 @@ function mobileAnchors() {
             </div>
             <div class="section">
                 <h1>Today's Special</h1>
+                <div class='specialHeader blurb'></div>
                 <div class="specials blurb"></div>
             </div>
             <div class="section">
                 <h1 class="location">Location</h1>
                 <div class="blurb">
-                    <div class="mapBox">
+                    <div class='mapBox'>
                         <div id="map">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3317.340805936194!2d-84.393532248631!3d33.75185808059409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f50383f3ab72e5%3A0xab2ff0008509bc09!2sThe+Iron+Yard+-+Atlanta!5e0!3m2!1sen!2sus!4v1487883071532" width="100%" height="auto" frameborder="0" style="border:0" allowfullscreen></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3317.340805936194!2d-84.393532248631!3d33.75185808059409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f50383f3ab72e5%3A0xab2ff0008509bc09!2sThe+Iron+Yard+-+Atlanta!5e0!3m2!1sen!2sus!4v1487883071532" width="100%" height="225" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                        <div class='locationAddress'>
+                            115 M.L.K. Jr Dr SW #400, Atlanta, GA 30303
+                        </div>
+                        <div class='locationMap'>
+                            555-555-5555 • 555-555-5555 •
+                            <a href='https://www.google.com/maps/place/The+Iron+Yard+-+Atlanta/@33.7518581,-84.3913382,15z/data=!4m5!3m4!1s0x0:0xab2ff0008509bc09!8m2!3d33.7518581!4d-84.3913382'>Map</a>
+                            •
+                            <a href='https://www.google.com/maps/dir//The+Iron+Yard+-+Atlanta,+115+M.L.K.+Jr+Dr+SW+%23400,+Atlanta,+GA+30303/@33.7518581,-84.3913382,15z/data=!4m15!1m6!3m5!1s0x0:0xab2ff0008509bc09!2sThe+Iron+Yard+-+Atlanta!8m2!3d33.7518581!4d-84.3913382!4m7!1m0!1m5!1m1!1s0x88f50383f3ab72e5:0xab2ff0008509bc09!2m2!1d-84.3913382!2d33.7518581'> Directions
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -97,7 +102,41 @@ function mobileAnchors() {
             </div>
             <div class="section">
                 <h1>Reservations</h1>
-                <div class="reservations blurb"></div>
+                <div class="reservations blurb">
+                    <form>
+                        <label class="label">Name</label>
+                        <p class="control">
+                          <input class="input" type="text" placeholder="Reservation Name">
+                        </p>
+                        <label class="label">Number of Guests</label>
+                        <p class="control">
+                          <input class="input" type="number" min="1" max="12" placeholder="Enter a number">
+                        </p>
+                        <label class="label">Date</label>
+                        <p class="control">
+                          <input class="input" type="date" placeholder="Text input">
+                        </p>
+                        <label class="label">Special Requests</label>
+                        <p class="control">
+                          <textarea class="textarea" placeholder="Please let us know how to make your experience unforgettable"></textarea>
+                        </p>
+                        <label class="label">Seating Preference</label>
+                        <p class="control">
+                          <span class="select">
+                            <select>
+                                <option>Indoor</option>
+                                <option>Patio</option>
+                                <option>Bar</option>
+                                <option>Rooftop</option>
+                            </select>
+                          </span>
+                        </p>
+                        <div class="control is-grouped">
+                          <p class="control">
+                            <button class="button is-primary">Reserve Table</button>
+                          </p>
+                    </form>
+                </div>
             </div>
             <div class="section">
                 <h1>Photos</h1>
@@ -163,10 +202,10 @@ function desktopAnchors()   {
                 </div>
                 <div class="location column">
                     <h1 class='locationHeader'>Our Location</h1>
-                        <div class='mapBox'>
-                            <div id="map">
-                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3317.340805936194!2d-84.393532248631!3d33.75185808059409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f50383f3ab72e5%3A0xab2ff0008509bc09!2sThe+Iron+Yard+-+Atlanta!5e0!3m2!1sen!2sus!4v1487883071532" width="100%" height="225" frameborder="0" style="border:0" allowfullscreen></iframe>
-                            </div>
+                    <div class='mapBox'>
+                        <div id="map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3317.340805936194!2d-84.393532248631!3d33.75185808059409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f50383f3ab72e5%3A0xab2ff0008509bc09!2sThe+Iron+Yard+-+Atlanta!5e0!3m2!1sen!2sus!4v1487883071532" width="100%" height="225" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
                         <div class='locationAddress'>
                             115 M.L.K. Jr Dr SW #400, Atlanta, GA 30303
                         </div>
