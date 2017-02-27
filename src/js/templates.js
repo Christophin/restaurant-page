@@ -62,6 +62,7 @@ function desktopMenu (data){
     //pulls BEER information from MENU api
     data.Beer.forEach(function(beer){
         // Oh god I hate this solution to the dots from item to price
+        // please forgive me Brit!
         $('.beers').append(`
                 <div class='beer'>
                     <div class='beer-name is-left'>
