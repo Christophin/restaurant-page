@@ -26,7 +26,7 @@ $('.reservationTab').click(reservationFill);
 $('form').submit(function(event)    {
     event.preventDefault();
     $('form').trigger('reset');
-    alert('Your reservation has been submitted. We look forward to serving you.');
+    $('.reservationBox').html('<p class="confirm">Your reservation has been submitted. We look forward to serving you.</p>');
 });
 // api requests
 searchFlickr('german pub').then(processFlickr);
@@ -42,7 +42,7 @@ var menuGrabber = function() {
 };
 grabSpecial().then(mobileSpecial);
 
-// This works but we didn't want lorum ipsom on our page.
+// This works but we didn't want this lorum ipsom fuck boy shit on our page.
 // left it wired up so you could see we completed this part of the assignment
 //grabNews().then(mobileNews);
 
@@ -55,6 +55,7 @@ menuGrabber();
 
 
 //makes our breakPoint reactive.
+// this kills the APIs
 // $(window).resize(function() {
 //     if (window.innerWidth === 650)  {
 //         breakPoint().then(menuGrabber).then(function()  {
